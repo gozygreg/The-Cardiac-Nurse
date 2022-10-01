@@ -1,4 +1,4 @@
-{% load ststic %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -33,16 +33,21 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'home' %}"><span class="brand">c<span class="red-o">o</span>de<span
-                        class="thin">|star</span></span></span></a>
+            <a class="navbar-brand" href="{% url 'home' %}"><span class="brand">The Cardiac Nurse</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto ms-5 mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Our Nurses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Our Blog</a>
                     </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item">
@@ -50,7 +55,7 @@
                     </li>
                     {% else %}
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Register</a>
+                        <a class="nav-link" href="#">Join Us | Register</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Login</a>
@@ -58,7 +63,7 @@
                     {% endif %}
                 </ul>
                 <span class="navbar-text text-muted">
-                    adventures of a software developer
+                    adventures of a the cardiac nurse
                 </span>
             </div>
         </div>
