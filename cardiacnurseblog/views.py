@@ -1,8 +1,9 @@
 """
 Functions for the view code
 """
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
+from django.http import HttpResponseRedirect
 from .models import NurseBlog
 from .forms import BlogCommentForm
 
@@ -13,7 +14,7 @@ def home_page(request):
     """
     return render(request, 'index.html')
 
-
+# Class used from 'I think before I blog' walkthrough project
 class BlogPage(generic.ListView):
     """
     view for blog page
@@ -27,9 +28,18 @@ class BlogPage(generic.ListView):
     paginate_by = 6
 
 
+# Class used from 'I think before I blog' walkthrough project
 class BlogPostDetail(View):
-
+    """
+    To allow individual blog post
+    to be rendered on a webpage for more detail
+    about the particular blog post
+    """
     def get(self, request, slug, *args, **kwargs):
+        """
+        creates a comment session
+        on a page
+        """
         queryset = NurseBlog.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.filter(approved=True).order_by('created_on')
@@ -50,7 +60,10 @@ class BlogPostDetail(View):
         )
 
     def post(self, request, slug, *args, **kwargs):
-
+        """
+        allows users to submit
+        new comments to a blog post
+        """
         queryset = NurseBlog.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.filter(approved=True).order_by("-created_on")
@@ -79,3 +92,19 @@ class BlogPostDetail(View):
                 "liked": liked
             },
         )
+
+
+# Class used from 'I think before I blog' walkthrough project
+class BlogPostLike(View):
+    """
+    lets user like a blog post
+    """
+    def post(self, request, slug):
+        post = get_object_or_404(NurseBlog, slug=slug)
+
+        if post.likes.filter(id=request.user.id).exists():
+            post.like.remove(request.user)
+        else:
+            post.likes.add(request.user)
+
+        return HttpResponseRedirect(reverse('blogpost_detail', args=[slug]))
