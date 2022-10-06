@@ -1,5 +1,8 @@
 body {
     background-color: #F9FAFC;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 58px;
 }
 
 .brand {
@@ -139,4 +142,27 @@ body {
     color: #E84610;
     background: transparent;
     border: none;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+}
+
+
+/* Index.html */
+#hero {
+    background-color: black;
+    color: #fff;
+}
+
+.bg-img {
+    height: 400px;
+}
+
+.index_pg-img {
+    height: 300px;
+    padding-top: 10px;
 }

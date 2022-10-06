@@ -1,5 +1,8 @@
-from . import views
+"""
+url paths for views to be rendered to the browser
+"""
 from django.urls import path
+from . import views
 
 
 urlpatterns = [

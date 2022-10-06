@@ -14,6 +14,7 @@ def home_page(request):
     """
     return render(request, 'index.html')
 
+
 # Class used from 'I think before I blog' walkthrough project
 class BlogPage(generic.ListView):
     """
@@ -100,6 +101,9 @@ class BlogPostLike(View):
     lets user like a blog post
     """
     def post(self, request, slug):
+        """
+        checks for user
+        """
         post = get_object_or_404(NurseBlog, slug=slug)
 
         if post.likes.filter(id=request.user.id).exists():
