@@ -5,9 +5,9 @@
 {% block content %}
 <div class="container-fluid">
     <div class="row" id="hero">
-        <div class="col-md-4">
+        <div class="col-md-4 p-5">
             <div>
-                <h2 class="mt-2 brand-text page-links">Educational Platform for Nurses created by Nurses</h2>
+                <h1 class="mt-2 brand-text page-links">Cardiac Nursing at its finest</h1>
                 <p>The Cardiac Nurse is every nurse's go-to blog for quick, useful information about anything
                     cardiovascular. It is a platform that has a repertoire of other professional collegues that
                     specialise in cardiac nursing</p>
@@ -20,22 +20,18 @@
         </div>
     </div>
 
-    <div class="row content mb-5 d-flex justify-content-center">
+    <div class="row content mb-5 d-flex justify-content-center dark">
         <div class="col-sm-6 col-lg-4 col-xl-3 text-center">
             <div>
-                <a href="#">
-                    <img src="{% static 'images/nurses.png' %}" class="index_pg-img" alt="Picture of health workers">
-                    <h3 class="mt-2 brand-text page-links">Meet our brilliant nurses</h3>
-                </a>
+                <a href="#" type="button" class="mt-2 brand-text page-links btn btn-lg home-button">Meet our
+                    nurses</a>
             </div>
         </div>
         <div class="col-sm-6 col-lg-4 col-xl-3 text-center">
             <div>
-                <a href="{% url 'our_blog' %}">
-                    <img src="{% static 'images/injection.jpg' %}" class="index_pg-img"
-                        alt="Picture of injection syringe">
-                    <h3 class="mt-2 brand-text page-links">Check out our blog</h3>
-                </a>
+                <a href="{% url 'our_blog' %}" type="button"
+                    class="mt-2 brand-text page-links btn btn-lg home-button">Check out our
+                    blog</a>
             </div>
         </div>
     </div>
