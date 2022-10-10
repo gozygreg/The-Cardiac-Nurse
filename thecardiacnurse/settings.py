@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'django_summernote',
     'cardiacnurseblog',
+    'cardiacnurseprofile',
 ]
 
 SITE_ID = 1
