@@ -1,5 +1,5 @@
 """
-Providing acess to NurseProfile in
+Providing access to NurseProfile in
 the admin panel of django
 """
 from django.contrib import admin
@@ -27,10 +27,3 @@ class NurseProfileAdmin(SummernoteModelAdmin):
         to join the platform
         """
         queryset.update(status=1)
-
-
-# class SpecialtyAdmin(admin.ModelAdmin):
-#     fields = ('specialty', )
-
-
-# admin.site.register(Specialty, SpecialtyAdmin)
