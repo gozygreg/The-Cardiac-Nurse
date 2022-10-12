@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+{% load crispy_forms_tags %}
+{% load cloudinary %}
+
+<div class="col-12 art-prints-area">
+    <div class="row submission-form">
+        <!-- NEW PRINT SUBMISSION FIELD -->
+        {% if user.is_authenticated %}
+        <div class="col-sm-6">
+            <div class="card mb-4">
+                <div class="card-body all-prints-cards">
+                    <h2>Edit your profile:</h2>
+                    <hr />
+                    <form method="POST" style="margin-top: 1.3em;" enctype="multipart/form-data">
+                        {{ form_edit | crispy }}
+                        {% csrf_token %}
+                        <button type="submit" class="submit-print-button">Submit Changes</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+
+{%endblock%}

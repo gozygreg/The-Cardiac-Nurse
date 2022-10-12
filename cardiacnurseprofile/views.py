@@ -7,6 +7,7 @@ from django.views import generic, View
 from django.http import HttpResponseRedirect
 from django.contrib import messages
 from . models import NurseProfile
+from .forms import SubmitNurseProfile
 
 
 class NursePage(generic.ListView):
@@ -17,3 +18,51 @@ class NursePage(generic.ListView):
     queryset = NurseProfile.objects.filter(status=1).order_by('-created_on')
     template_name = 'nurseprofile.html'
     paginate_by = 6
+
+
+def submit_profile(request):
+    """
+    view for nurse profile submit page
+    """
+    if request.method == 'POST':
+        profile_form = SubmitNurseProfile(request.POST, request.FILES)
+        if profile_form.is_valid():
+            profile_form.instance.print_name = request.User
+            profile_form.save()
+            messages.success(request, "Verifing your details! Check back soon.")
+            return redirect('nurseprofile')
+        else:
+            profile_form = SubmitNurseProfile()
+
+    return render(
+        request,
+        'submitprofile.html',
+        {
+            'profile_form': SubmitNurseProfile(),
+        },
+    )
+
+def edit_profile(request):
+    """
+    Edit a nurse profile
+    """
+    profile = get_object_or_404(Cardiacnurseprofile)
+    form_edit = SubmitNurseProfile(request.POST or None, instance=profile)
+    context = {
+        'profile': profile,
+        'form_edit': form_edit
+    }
+
+    if request.method == 'POST':
+        form_edit = SubmitNurseProfile(
+            request.POST, request.FILES, instance=profile
+        )
+        if form_edit.is_valid():
+            profile = form_edit.save(commit=False)
+            profile.nurse_name = request.User
+            profile.save()
+            return redirect('nurseprofile')
+        else:
+            form_edit = SubmitNurseProfile(instance=profile)
+
+        return render(request, 'editnurseprofile.html', context)
