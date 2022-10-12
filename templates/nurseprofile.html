@@ -3,37 +3,27 @@
 {% load static %}
 
 {% block content %}
-<div class="container-fluid">
-    <div class="row" id="hero">
-        <div class="col-md-4 p-5">
-            <div>
-                <h1 class="mt-2 brand-text page-links">Cardiac Nursing at its finest</h1>
-                <p>The Cardiac Nurse is every nurse's go-to blog for quick, useful information about anything
-                    cardiovascular. It is a platform that has a network of other professional collegues that
-                    specialise in cardiac nursing</p>
+
+<!-- ART PRINTS -->
+<div class="col-12 art-prints-area">
+    <div class="row print-display new-submission">
+        <!-- NEW PRINT SUBMISSION FIELD -->
+        {% if user.is_authenticated %}
+        <div class="col-sm-6">
+            <div class="card mb-4">
+                <div class="card-body all-prints-cards">
+                    <h2>Submit your print:</h2>
+                    <hr />
+                    <p>Have a piece you want to share?</p>
+                    <p>Just click the button!</p>
+                    <br>
+                    <button onclick="location.href='{% url 'submitprint' %}'" type="button"
+                        class="submit-print-button">SUBMIT PRINT</button>
+                </div>
             </div>
         </div>
-        <div class="col-md-8">
-            <div>
-                <img src="{% static 'images/heart.jpg' %}" alt="Responsive image" class="bg-img">
-            </div>
-        </div>
+        {% endif %}
     </div>
 
-    <div class="row content mb-5 d-flex justify-content-center dark">
-        <div class="col-sm-6 col-lg-4 col-xl-3 text-center">
-            <div>
-                <a href="{% url 'nurse_profile' %}" type="button"
-                    class="mt-2 brand-text page-links btn btn-lg home-button">Meet our
-                    nurses</a>
-            </div>
-        </div>
-        <div class="col-sm-6 col-lg-4 col-xl-3 text-center">
-            <div>
-                <a href="{% url 'our_blog' %}" type="button"
-                    class="mt-2 brand-text page-links btn btn-lg home-button">Check out our
-                    blog</a>
-            </div>
-        </div>
-    </div>
-    {% endblock content %}
+</div>
+{% endblock content %}
