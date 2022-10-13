@@ -6,7 +6,7 @@ from django.shortcuts import render, redirect, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from django.contrib import messages
-from . models import NurseProfile
+from .models import NurseProfile
 from .forms import SubmitNurseProfile
 
 
@@ -29,7 +29,8 @@ def submit_profile(request):
         if profile_form.is_valid():
             profile_form.instance.print_name = request.User
             profile_form.save()
-            messages.success(request, "Verifing your details! Check back soon.")
+            messages.success(
+                request, "Verifing your details! Check back soon.")
             return redirect('nurseprofile')
         else:
             profile_form = SubmitNurseProfile()
@@ -42,11 +43,12 @@ def submit_profile(request):
         },
     )
 
+
 def edit_profile(request):
     """
     Edit a nurse profile
     """
-    profile = get_object_or_404(Cardiacnurseprofile)
+    profile = get_object_or_404(NurseProfile)
     form_edit = SubmitNurseProfile(request.POST or None, instance=profile)
     context = {
         'profile': profile,
@@ -66,3 +68,12 @@ def edit_profile(request):
             form_edit = SubmitNurseProfile(instance=profile)
 
         return render(request, 'editnurseprofile.html', context)
+
+
+def delete_profile(request):
+    """
+    Delete a nurse profile
+    """
+    profile = get_object_or_404(NurseProfile)
+    profile.delete()
+    return redirect('nurseprofile')

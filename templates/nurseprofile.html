@@ -4,10 +4,9 @@
 
 {% block content %}
 
-<!-- ART PRINTS -->
+<!-- JOIN PLATFORM -->
 <div class="col-12 art-prints-area">
     <div class="row print-display new-submission">
-        <!-- NEW PRINT SUBMISSION FIELD -->
         {% if user.is_authenticated %}
         <div class="col-sm-6">
             <div class="card mb-4">
@@ -26,7 +25,7 @@
     </div>
 
     <div class="row print-display">
-        <!-- APPROVED PRINT SUBMISSIONS -->
+        <!-- VERIFY NURSE/USER NEW TO PLATFORM -->
         {% for nurse in nurseprofile_list %}
         <div class="col-md-6 col-lg-3">
             <div class="card mb-4">
@@ -52,5 +51,19 @@
 
     <br>
 
+    <div class="row next-prev-button">
+        {% if is_paginated %}
+        <div>
+            {% if page_obj.has_previous %}
+            <button onclick="location.href='?page={{ page_obj.previous_page_number }}'" type="button"
+                class="pagination-button">PREV</button>
+            {% endif %}
+            {% if page_obj.has_next %}
+            <button onclick="location.href='?page={{ page_obj.next_page_number }}'" type="button"
+                class="pagination-button">NEXT</button>
+            {% endif %}
+        </div>
+        {% endif %}
+    </div>
 </div>
 {% endblock content %}

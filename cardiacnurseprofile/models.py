@@ -18,10 +18,8 @@ class NurseProfile(models.Model):
             4, 'Arrythmia'), (5, 'Congenital Heart Disease'), (
                 6, 'Other'))
 
-    specialty = models.IntegerField(choices=choice, null=True, blank=True)
+    specialty = models.IntegerField(choices=choice, default=1)
     nurse_name = models.CharField(
-        max_length=50, unique=True, null=False, blank=False)
-    slug = models.SlugField(
         max_length=50, unique=True, null=False, blank=False)
     description = models.TextField()
     nurse_image = CloudinaryField('image', null=False, blank=False)

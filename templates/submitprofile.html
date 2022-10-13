@@ -1,10 +1,28 @@
 {% extends "base.html" %}
-
-{% load static %}
-
 {% block content %}
+{% load crispy_forms_tags %}
+{% load cloudinary %}
 
+<div class="col-12 art-prints-area">
+    <div class="row submission-form">
+        <!-- FORM FOR NURSE TO JOIN PLATFORM -->
+        {% if user.is_authenticated %}
+        <div class="col-sm-6">
+            <div class="card mb-4">
+                <div class="card-body all-prints-cards">
+                    <h2>Submit your print:</h2>
+                    <hr />
+                    <p>just click the button</p>
+                    <form method="POST" style="margin-top: 1.3em;" enctype="multipart/form-data">
+                        {{ profile_form | crispy }}
+                        {% csrf_token %}
+                        <button type="submit" class="submit-print-button">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
 
-
-
-{% endblock content %}
+{%endblock%}

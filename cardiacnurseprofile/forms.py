@@ -20,12 +20,10 @@ class SubmitNurseProfile(forms.ModelForm):
             'specialty',
             'description',
             'nurse_image',
-            'slug',
         )
         labels = {
             'nurse_name': 'Name',
             'specialty': 'Area of interest / Specialty',
             'description': 'Career Journey',
             'nurse_image': 'Profile picture',
-            'slug': 'Repeat name',
         }
