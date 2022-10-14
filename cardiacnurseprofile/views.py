@@ -77,3 +77,12 @@ def delete_profile(request):
     profile = get_object_or_404(NurseProfile)
     profile.delete()
     return redirect('nurseprofile')
+
+
+def nurse_details(request, primary_key):
+    details = get_object_or_404(NurseProfile, pk=primary_key)
+    return render(
+        request=request,
+        template_name='nursedetails.html',
+        context={'details': details}
+    )

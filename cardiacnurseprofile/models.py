@@ -20,7 +20,7 @@ class NurseProfile(models.Model):
 
     specialty = models.IntegerField(choices=choice, default=1)
     nurse_name = models.CharField(
-        max_length=50, unique=True, null=False, blank=False)
+        primary_key=True, max_length=50, unique=True, null=False, blank=False)
     description = models.TextField()
     nurse_image = CloudinaryField('image', null=False, blank=False)
     status = models.IntegerField(choices=STATUS, default=0)
