@@ -1,0 +1,198 @@
+[{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$ijnORQpOjSi2dqKg6zkPMc$jpqcppjQ1nnOJcNAqG3gp3FzGSQ3gFUpY9gJlvv89Mg=",
+        "last_login": "2022-10-17T14:00:05.949Z",
+        "is_superuser": true,
+        "username": "gozygreg",
+        "first_name": "",
+        "last_name": "",
+        "email": "goziennabuife@yahoo.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2022-09-28T21:02:16.886Z",
+        "groups": [],
+        "user_permissions": []
+    }
+}, {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$41bzK8QCD6VYIcKi1E50VW$T4FLV+8LQ058xgqx2ASNg4Skc/5IIrbhYB4t1iU13V0=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "Ben10",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-10-02T20:17:29.558Z",
+        "groups": [],
+        "user_permissions": []
+    }
+}, {
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$QxZ3LMxlQdJPg1I6jdSRuh$mPXFnOVDaoDNT1//AYOpR99bFg5ljXY5yfRc/79xAak=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "gregor",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-10-02T20:21:03.343Z",
+        "groups": [],
+        "user_permissions": []
+    }
+}, {
+    "model": "auth.user",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$vtOmwS4PM2ZvFiXoCcYr7H$QEx2uUS+41XWdm+yjHmtvjLwfsdRuy6kNphwNrd4IPE=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "ben101",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-10-02T20:22:59.464Z",
+        "groups": [],
+        "user_permissions": []
+    }
+}, {
+    "model": "auth.user",
+    "pk": 5,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$n3ocUV3F3EM2Rz7Qj2QFmu$lO2YWx88cohY2XFY5/Mnl0rvIWcCH5Sj0RrT49a8ZOc=",
+        "last_login": "2022-10-02T20:28:16.647Z",
+        "is_superuser": false,
+        "username": "gregor1",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-10-02T20:28:16.463Z",
+        "groups": [],
+        "user_permissions": []
+    }
+}, {
+    "model": "sessions.session",
+    "pk": "3kd6jivj1jrelqewvu3bztyvacoyaagu",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSEyBYZx6b7fQAYYpGrapI-V8d-1SRe6veec-1KRt7XFbZE5DkVdlFGn3y1xfsi4g3Ln8TbpPI3rPCS9K_qgi-6nIs_r4f4dNF7at7bIFKAEJjQoWIU76hyGRATGEWPOEDrg5LEak8AFC-DP1XpfSZyo9wfGZzcJ:1okPbI:je6A9RDOxNJuMp0lDI6uBP2UhMqKKcO7Dm_wR4TKcY8",
+        "expire_date": "2022-10-31T12:52:12.073Z"
+    }
+}, {
+    "model": "sessions.session",
+    "pk": "7h2pbrfb79qd61pdst29se6b3gd2itdt",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSEyBYZx6b7fQAYYpGrapI-V8d-1SRe6veec-1KRt7XFbZE5DkVdlFGn3y1xfsi4g3Ln8TbpPI3rPCS9K_qgi-6nIs_r4f4dNF7at7bIFKAEJjQoWIU76hyGRATGEWPOEDrg5LEak8AFC-DP1XpfSZyo9wfGZzcJ:1odeCu:jJxQwt1U5SWsjc3O9qNdXYfwGS9S7ly_vFDyFR_ldYs",
+        "expire_date": "2022-10-12T21:03:04.603Z"
+    }
+}, {
+    "model": "sessions.session",
+    "pk": "asz9kxc04u7b3pyrl4ceeieqvc4sl7t8",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSFlWl5duvcbyACDRQ2Y0iYa479rky50e8-558Ucrsvk1kazy5GNTLDD7-YxXKlsIF6wnCsPtSxz9nxT-E4bP9VIt-Pu_gUmbNP3PWi0BqJBq4UmnQh720ttvLUgpEUdApge0CudhPAgzQCgujQolSxJ2qKNWsu1OHrc8_xkY_f-AF1xPkY:1of7Yl:2LZW5WAXfWQdcfxCiYmNvyA4OCjMWNNCrbgsSBbz7qw",
+        "expire_date": "2022-10-16T22:35:43.341Z"
+    }
+}, {
+    "model": "sessions.session",
+    "pk": "ln5wwrk3891f87yd3fw3fbfjamuuw5bl",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSEyBYZx6b7fQAYYpGrapI-V8d-1SRe6veec-1KRt7XFbZE5DkVdlFGn3y1xfsi4g3Ln8TbpPI3rPCS9K_qgi-6nIs_r4f4dNF7at7bIFKAEJjQoWIU76hyGRATGEWPOEDrg5LEak8AFC-DP1XpfSZyo9wfGZzcJ:1okQez:79nZ2wD8TOhJYjDFWiHfj56SCGVcw_ugcpQhlaw5lIA",
+        "expire_date": "2022-10-31T14:00:05.969Z"
+    }
+}, {
+    "model": "sessions.session",
+    "pk": "lv7t2gdzflf8phd0zrawyjt9cq4f5xpe",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSEyBYZx6b7fQAYYpGrapI-V8d-1SRe6veec-1KRt7XFbZE5DkVdlFGn3y1xfsi4g3Ln8TbpPI3rPCS9K_qgi-6nIs_r4f4dNF7at7bIFKAEJjQoWIU76hyGRATGEWPOEDrg5LEak8AFC-DP1XpfSZyo9wfGZzcJ:1okPcB:IhD2A8HlVZiQCEDpGzqWay_h6l8SzT1lMHeqj_WAbwY",
+        "expire_date": "2022-10-31T12:53:07.922Z"
+    }
+}, {
+    "model": "sessions.session",
+    "pk": "swox3wulx0f12wmzqpn6vzpjdpdvsany",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSFlWl5duvcbyACDRQ2Y0iYa479rky50e8-558Ucrsvk1kazy5GNTLDD7-YxXKlsIF6wnCsPtSxz9nxT-E4bP9VIt-Pu_gUmbNP3PWi0BqJBq4UmnQh720ttvLUgpEUdApge0CudhPAgzQCgujQolSxJ2qKNWsu1OHrc8_xkY_f-AF1xPkY:1ofTBN:oWEfR73tamDdRZeTDrSCDIDBAR2m2dAulxOrDiNhzLM",
+        "expire_date": "2022-10-17T21:41:01.671Z"
+    }
+}, {
+    "model": "sessions.session",
+    "pk": "wsw06y8y1k4ihdw4eq4n8fmiuuquhqx9",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSEyBYZx6b7fQAYYpGrapI-V8d-1SRe6veec-1KRt7XFbZE5DkVdlFGn3y1xfsi4g3Ln8TbpPI3rPCS9K_qgi-6nIs_r4f4dNF7at7bIFKAEJjQoWIU76hyGRATGEWPOEDrg5LEak8AFC-DP1XpfSZyo9wfGZzcJ:1ohzzG:Ew1OFHQ0crny1b_EVMSmH6X7NYv4C17DriPCrxyk3pw",
+        "expire_date": "2022-10-24T21:06:58.039Z"
+    }
+}, {
+    "model": "sites.site",
+    "pk": 1,
+    "fields": {
+        "domain": "example.com",
+        "name": "example.com"
+    }
+}, {
+    "model": "cardiacnurseblog.nurseblog",
+    "pk": 1,
+    "fields": {
+        "title": "Emergencies in the cathlab",
+        "slug": "emergencies-in-the-cathlab",
+        "author": 1,
+        "featured_image": "image/upload/placeholder",
+        "excerpt": "It is amazing how the cardiac catheter lab can go from calm and peaceful to absolute caos particularly if you are dealing with an inferior STEMI. You always have to be ready for anything that can happen.",
+        "updated_on": "2022-10-01T05:59:04.202Z",
+        "content": "It is amazing how the cardiac catheter lab can go from calm and peaceful to absolute caos particularly if you are dealing with an inferior STEMI. You always have to be ready for anything that can happen; administering quick intravenous fluids, atropine, adrenaline and the dreaded CPR etcetera.",
+        "created_on": "2022-09-28T21:43:54.382Z",
+        "status": 1,
+        "likes": []
+    }
+}, {
+    "model": "cardiacnurseblog.nurseblog",
+    "pk": 2,
+    "fields": {
+        "title": "Amazing guide for your nursing placement",
+        "slug": "amazing-guide-for-your-nursing-placement",
+        "author": 1,
+        "featured_image": "image/upload/placeholder",
+        "excerpt": "Student placement in any cardiology specialty is one of the most exciting and challenging experience you will most likely face as a student nurse.",
+        "updated_on": "2022-10-01T05:54:32.413Z",
+        "content": "<p>Student placement in any cardiology specialty is one of the most exciting and challenging experience you will most likely face as a student nurse. One has to be prepared to go through the intensity of cardiac Cath lab environment, get conversant with the basis ECG and rhythm management amongst other things.&nbsp;<br></p>",
+        "created_on": "2022-10-01T05:54:32.413Z",
+        "status": 1,
+        "likes": []
+    }
+}, {
+    "model": "cardiacnurseblog.nurseblog",
+    "pk": 3,
+    "fields": {
+        "title": "Current guidelines in heart failure management",
+        "slug": "current-guidelines-in-heart-failure-management",
+        "author": 1,
+        "featured_image": "image/upload/placeholder",
+        "excerpt": "Heart failure is a condition that is happens when the heart fails to meet the blood supply demand of the body. In technical terms, it is when the left ventricle is unable to pump adequate amount of blood to the rest of the body.",
+        "updated_on": "2022-10-01T06:02:26.610Z",
+        "content": "<p>Heart failure is a condition that is happens when the heart fails to meet the blood supply demand of the body. In technical terms, it is when the left ventricle is unable to pump adequate amount of blood to the rest of the body.&nbsp;<br></p>",
+        "created_on": "2022-10-01T06:02:26.610Z",
+        "status": 1,
+        "likes": []
+    }
+}, {
+    "model": "cardiacnurseblog.blogcomment",
+    "pk": 1,
+    "fields": {
+        "post": 2,
+        "name": "gozygreg",
+        "email": "goziennabuife@yahoo.com",
+        "body": "This is amazing",
+        "created_on": "2022-10-02T23:04:00.565Z",
+        "approved": true
+    }
+}]

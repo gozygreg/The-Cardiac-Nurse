@@ -36,7 +36,7 @@
                             <p>RN: {{ nurse.nurse_name }}</p>
                         </div>
                     </div>
-                    <a href="#" class="nurse-link">
+                    <a href="{% url 'nursedetails' nurse.slug %}" class="nurse-link">
                         <h2>{{ nurse.nurse_name }}</h2>
                     </a>
                 </div>
