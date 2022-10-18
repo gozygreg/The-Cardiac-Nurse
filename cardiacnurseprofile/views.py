@@ -79,10 +79,18 @@ def delete_profile(request):
     return redirect('nurseprofile')
 
 
-def nurse_details(request, primary_key):
-    details = get_object_or_404(NurseProfile, pk=primary_key)
-    return render(
-        request=request,
-        template_name='nursedetails.html',
-        context={'details': details}
-    )
+class NurseDetails(View):
+    """
+    render individual nurse profile
+    details on the browser
+    """
+    def get(self, request, slug, *args, **kwargs):
+        queryset = NurseProfile.objects.filter(status=1)
+        nurse = get_object_or_404(queryset, slug=slug)
+        return render(
+            request,
+            'nursedetails.html',
+            {
+                'nurse': nurse
+            }
+        )
