@@ -33,12 +33,11 @@
                     <div class="image-container">
                         <img class="card-img-top" src="{{ nurse.nurse_image.url }}" alt="{{ nurse.nurse_name }}">
                         <div class="image-flash">
-                            <p>RN: {{ nurse.nurse_name }}</p>
+                            <a href="{% url 'nursedetails' nurse.slug %}" class="nurse-link">
+                                <p>RN: {{ nurse.nurse_name }}</p>
+                            </a>
                         </div>
                     </div>
-                    <a href="{% url 'nursedetails' nurse.slug %}" class="nurse-link">
-                        <h2>{{ nurse.nurse_name }}</h2>
-                    </a>
                 </div>
             </div>
         </div>

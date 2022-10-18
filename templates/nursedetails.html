@@ -4,7 +4,7 @@
 
 {% load crispy_forms_tags %}
 <div class="col-12 single-print-area">
-    <!-- TITLE & IMAGE -->
+    <!-- NURSE PROFILE PICTURE -->
     <div class="row">
         <div class="col-sm-6">
             <div class="card mb-4">
@@ -22,16 +22,14 @@
         <div class="col-sm-6">
             <div class="card mb-4">
                 <div class="card-body single-print-card">
-                    <p>Artist: {{ prints.artist }}</p>
+                    <h2>Area of interest: {{ nurse.specialty }}</h2>
                     <hr />
-
-                    <p>Style: {{ prints.category }}</p>
-                    <p>Description: {{ nurse.description | safe }}</p>
-                    <!-- PRINT LIKES -->
+                    <h3>------- Career Journey -------</h3>
+                    <p>{{ nurse.description | safe }}</p>
                     <div>
                         {% if request.user == nurse.nurse_name %}
                         <hr>
-                        <button onclick="location.href='{% url 'edit_print' prints.slug %}'" type="button"
+                        <button onclick="location.href='{% url 'editnurseprofile' nurse.slug %}'" type="button"
                             class="edit-delete-button">EDIT</button>
                         <button onclick="location.href='{% url 'delete_print' prints.slug %}'" type="button"
                             class="edit-delete-button">DELETE</button>

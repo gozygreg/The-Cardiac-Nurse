@@ -16,12 +16,12 @@ class NurseProfile(models.Model):
     """
     Database model for nurse profile
     """
-    choice = ((1, 'Ischemic Heart Disease'), (
-        2, 'Heart Failure'), (3, 'Coronary Care'), (
-            4, 'Arrythmia'), (5, 'Congenital Heart Disease'), (
-                6, 'Other'))
+    choice = (('Ischemic Heart Disease', ('IHD')), (
+        'Heart Failure', ('HF')), ('Coronary Care', ('CC')), (
+            'Arrythmia', ('ARY')), ('Congenital Heart Disease', ('CHD')), (
+                'Other', ('Other')))
 
-    specialty = models.IntegerField(choices=choice, default=1)
+    specialty = models.CharField(max_length=200, choices=choice, default='Heart Failure')
     nurse_name = models.CharField(
         primary_key=True, max_length=50, unique=True, null=False, blank=False)
     slug = models.SlugField(
@@ -55,3 +55,4 @@ class NurseProfile(models.Model):
         instead of the model ID
         """
         return self.nurse_name
+
