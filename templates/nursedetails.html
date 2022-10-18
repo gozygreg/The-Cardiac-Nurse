@@ -3,5 +3,44 @@
 {% block content %}
 
 {% load crispy_forms_tags %}
-yes
+<div class="col-12 single-print-area">
+    <!-- TITLE & IMAGE -->
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card mb-4">
+                <div class="card-body single-print-card">
+                    <h2>{{ nurse.nurse_name }}</h2>
+                    <hr />
+                    <div class="image-container">
+                        <img class="card-img-top" src="{{ nurse.nurse_image.url }}" alt="{{ nurse.nurse_name }}">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- NURSE DETAILS -->
+        <div class="col-sm-6">
+            <div class="card mb-4">
+                <div class="card-body single-print-card">
+                    <p>Artist: {{ prints.artist }}</p>
+                    <hr />
+
+                    <p>Style: {{ prints.category }}</p>
+                    <p>Description: {{ nurse.description | safe }}</p>
+                    <!-- PRINT LIKES -->
+                    <div>
+                        {% if request.user == nurse.nurse_name %}
+                        <hr>
+                        <button onclick="location.href='{% url 'edit_print' prints.slug %}'" type="button"
+                            class="edit-delete-button">EDIT</button>
+                        <button onclick="location.href='{% url 'delete_print' prints.slug %}'" type="button"
+                            class="edit-delete-button">DELETE</button>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 {% endblock %}
