@@ -5,19 +5,19 @@
 {% block content %}
 
 <!-- JOIN PLATFORM -->
-<div class="col-12 art-prints-area">
-    <div class="row print-display new-submission">
+<div class="col-12">
+    <div class="row h-100 d-flex align-items-center justify-content-center">
         {% if user.is_authenticated %}
         <div class="col-sm-6">
             <div class="card mb-4">
-                <div class="card-body all-prints-cards">
+                <div class="card-body text-center">
                     <h2>Are you a nurse with interest in cardiovascular nursing?</h2>
                     <hr />
                     <p>If you work in cardiac setting in any capacity, from CCU to CNS, from Cath Lab to NP, then this
                         platform is for you.</p>
                     <br>
-                    <button onclick="location.href='{% url 'submitprofile' %}'" type="button"
-                        class="submit-print-button">Join our platform</button>
+                    <button onclick="location.href='{% url 'submitprofile' %}'" type="button" class="glow-on-hover">Join
+                        our platform</button>
                 </div>
             </div>
         </div>

@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap');
 
+/* BASE.HTML PAGE */
 body {
     background-color: #F9FAFC;
     position: relative;
     min-height: 100vh;
     padding-bottom: 58px;
+}
+
+#nav-line {
+    margin: 0;
+    color: rgba(0, 0, 0, 0.985);
+    border-top: 2px solid;
+
 }
 
 h1 {
@@ -26,10 +34,6 @@ a {
     color: #4A4A4F;
 }
 
-.red-o {
-    color: #E84610;
-}
-
 .thin {
     font-weight: 300;
 }
@@ -43,9 +47,44 @@ a {
 }
 
 .main-bg {
+    background-color: white;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: #0693e3;
+}
+
+/* INDEX.HTML PAGE */
+#hero {
+    background-color: black;
+    color: #fff;
+}
+
+.bg-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.index_pg-img {
+    height: 300px;
+    padding-top: 10px;
+}
+
+.dark {
     background-color: black;
 }
 
+/* NURSEPROFILE AND NURSEDETAIL.HTML PAGES */
+.card-body {
+    color: #005eb8
+}
+
+/* NURSEBLOG AND BLOGPOST_DETAIL.HTML PAGES */
 .card {
     border: none;
     background-color: transparent;
@@ -105,12 +144,12 @@ a {
 
 .post-link {
     text-decoration: none;
-    color: #B6D5FD;
+    color: #005eb8
 }
 
 .post-link:hover,
 .page-link {
-    color: #fff;
+    color: #09014a
 }
 
 .post-title {
@@ -121,17 +160,6 @@ a {
 .post-subtitle {
     margin-left: 5%;
     color: lightgray;
-}
-
-.btn-signup {
-    background-color: #23BBBB;
-    color: #fff;
-}
-
-.btn-signup:hover,
-.btn-signup:active {
-    background-color: #fff;
-    color: #23BBBB;
 }
 
 .link {
@@ -145,57 +173,83 @@ a {
     text-decoration: underline;
 }
 
-.btn-like {
-    color: #E84610;
+/* SITE BUTTONS (Code snippet gotten from webdeasy.de) */
+.glow-on-hover,
+.home-button,
+.btn-signup {
+    width: 220px;
+    height: 50px;
     border: none;
-    background: transparent;
-}
-
-.btn-like:hover,
-.btn-like:active {
-    color: #E84610;
-    background: transparent;
-    border: none;
-}
-
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 20px;
-}
-
-
-/* Index.html */
-#hero {
-    background-color: black;
+    outline: none;
     color: #fff;
-}
-
-.bg-img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-
-.index_pg-img {
-    height: 300px;
-    padding-top: 10px;
-}
-
-.dark {
-    background-color: black;
-}
-
-.home-button {
-    padding: 0.4em 2.5em 0.5em 2.5em;
-    font-weight: 700;
+    background: #111;
     cursor: pointer;
-    box-shadow: 0px 2px 13px 2px rgb(34 60 80 / 20%);
-    background-color: #121a95;
-    color: #fff;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
 }
 
-.card-body {
-    color: #B6D5FD
+.glow-on-hover:before,
+.home-button:before,
+.btn-signup:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active,
+.home-button:active,
+.btn-signup:active {
+    color: #000
+}
+
+.glow-on-hover:active:after,
+.home-button:active:after,
+.btn-signup:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before,
+.home-button:hover:before,
+.btn-signup:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after,
+.home-button:after,
+.btn-signup:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
 }

@@ -16,7 +16,7 @@
                     <form method="POST" style="margin-top: 1.3em;" enctype="multipart/form-data">
                         {{ profile_form | crispy }}
                         {% csrf_token %}
-                        <button type="submit" class="submit-print-button">Submit</button>
+                        <button type="submit" class="submit-button" id="submit-btn">Submit</button>
                     </form>
                 </div>
             </div>
