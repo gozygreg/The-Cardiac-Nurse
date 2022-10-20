@@ -113,7 +113,7 @@ footer {
     overflow: hidden;
     position: relative;
     display: inline-block;
-    height: 33vh;
+    height: 66vh;
     width: 100%;
 }
 
@@ -176,7 +176,8 @@ footer {
 /* SITE BUTTONS (Code snippet gotten from webdeasy.de) */
 .glow-on-hover,
 .home-button,
-.btn-signup {
+.btn-signup,
+.submit-button {
     width: 220px;
     height: 50px;
     border: none;
@@ -191,7 +192,8 @@ footer {
 
 .glow-on-hover:before,
 .home-button:before,
-.btn-signup:before {
+.btn-signup:before,
+.submit-button:before {
     content: '';
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     position: absolute;
@@ -210,25 +212,29 @@ footer {
 
 .glow-on-hover:active,
 .home-button:active,
-.btn-signup:active {
+.btn-signup:active,
+.submit-button:active {
     color: #000
 }
 
 .glow-on-hover:active:after,
 .home-button:active:after,
-.btn-signup:active:after {
+.btn-signup:active:after,
+.submit-button:active:after {
     background: transparent;
 }
 
 .glow-on-hover:hover:before,
 .home-button:hover:before,
-.btn-signup:hover:before {
+.btn-signup:hover:before,
+.submit-button:hover:before {
     opacity: 1;
 }
 
 .glow-on-hover:after,
 .home-button:after,
-.btn-signup:after {
+.btn-signup:after,
+.submit-button:after {
     z-index: -1;
     content: '';
     position: absolute;
