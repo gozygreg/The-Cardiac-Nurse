@@ -3,9 +3,9 @@
 {% load crispy_forms_tags %}
 {% load cloudinary %}
 
-<div class="col-12 art-prints-area">
-    <div class="row submission-form">
-        <!-- NEW PRINT SUBMISSION FIELD -->
+<div class="col-12 bg-light">
+    <div class="row">
+        <!-- NEW SUBMISSION FIELD -->
         {% if user.is_authenticated %}
         <div class="col-sm-6">
             <div class="card mb-4">

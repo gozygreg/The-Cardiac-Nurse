@@ -2,7 +2,7 @@
 
 /* BASE.HTML PAGE */
 body {
-    background-color: #F9FAFC;
+    background-color: black;
     position: relative;
     min-height: 100vh;
     padding-bottom: 58px;
@@ -46,9 +46,9 @@ a {
     background-color: #445261;
 }
 
-.main-bg {
-    background-color: white;
-}
+/* .main-bg {
+    background-color: black;
+} */
 
 footer {
     position: absolute;
@@ -259,3 +259,15 @@ footer {
         background-position: 0 0;
     }
 }
+
+/* SIGNUP, LOGOUT AND LOGIN.HTML PAGES */
+
+
+/* MEDIUM SCREENS: LAPTOPS AND TABLETS */
+@media screen and (max-width:950px) {}
+
+/* IPADS */
+@media screen and (max-width:768px) {}
+
+/* MOBILE DEVICES */
+@media screen and (max-width:480px) {}

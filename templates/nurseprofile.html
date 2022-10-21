@@ -5,7 +5,7 @@
 {% block content %}
 
 <!-- JOIN PLATFORM -->
-<div class="col-12">
+<div class="col-12 bg-light">
     <div class="row h-100 d-flex align-items-center justify-content-center">
         {% if user.is_authenticated %}
         <div class="col-sm-6">
@@ -55,11 +55,11 @@
         <div>
             {% if page_obj.has_previous %}
             <button onclick="location.href='?page={{ page_obj.previous_page_number }}'" type="button"
-                class="pagination-button">PREV</button>
+                class="pagination-button mb-4">PREV</button>
             {% endif %}
             {% if page_obj.has_next %}
             <button onclick="location.href='?page={{ page_obj.next_page_number }}'" type="button"
-                class="pagination-button">NEXT</button>
+                class="pagination-button mb-4">NEXT</button>
             {% endif %}
         </div>
         {% endif %}
