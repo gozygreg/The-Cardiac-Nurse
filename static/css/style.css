@@ -177,7 +177,8 @@ footer {
 .glow-on-hover,
 .home-button,
 .btn-signup,
-.submit-button {
+.submit-button,
+.pagination-button {
     width: 220px;
     height: 50px;
     border: none;
@@ -193,7 +194,8 @@ footer {
 .glow-on-hover:before,
 .home-button:before,
 .btn-signup:before,
-.submit-button:before {
+.submit-button:before,
+.pagination-button:before {
     content: '';
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     position: absolute;
@@ -213,28 +215,32 @@ footer {
 .glow-on-hover:active,
 .home-button:active,
 .btn-signup:active,
-.submit-button:active {
+.submit-button:active,
+.pagination-button:active {
     color: #000
 }
 
 .glow-on-hover:active:after,
 .home-button:active:after,
 .btn-signup:active:after,
-.submit-button:active:after {
+.submit-button:active:after,
+.pagination-button:active:after {
     background: transparent;
 }
 
 .glow-on-hover:hover:before,
 .home-button:hover:before,
 .btn-signup:hover:before,
-.submit-button:hover:before {
+.submit-button:hover:before,
+.pagination-button:before {
     opacity: 1;
 }
 
 .glow-on-hover:after,
 .home-button:after,
 .btn-signup:after,
-.submit-button:after {
+.submit-button:after,
+.pagination-button:after {
     z-index: -1;
     content: '';
     position: absolute;
@@ -259,6 +265,9 @@ footer {
         background-position: 0 0;
     }
 }
+
+
+
 
 /* SIGNUP, LOGOUT AND LOGIN.HTML PAGES */
 

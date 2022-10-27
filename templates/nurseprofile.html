@@ -24,7 +24,7 @@
         {% endif %}
     </div>
 
-    <div class="row print-display">
+    <div class="row">
         <!-- VERIFY NURSE/USER NEW TO PLATFORM -->
         {% for nurse in nurseprofile_list %}
         <div class="col-md-4">
@@ -43,14 +43,14 @@
         </div>
         {% if forloop.counter|divisibleby:3 %}
     </div>
-    <div class="row print-display">
+    <div class="row">
         {% endif %}
         {% endfor %}
     </div>
 
     <br>
 
-    <div class="row next-prev-button">
+    <div class="d-flex justify-content-center">
         {% if is_paginated %}
         <div>
             {% if page_obj.has_previous %}
