@@ -4,6 +4,7 @@
 
 {% load crispy_forms_tags %}
 <div class="col-12 bg-light">
+    <br>
     <!-- NURSE PROFILE PICTURE -->
     <div class="row">
         <div class="col-sm-6">
@@ -31,7 +32,7 @@
                         <hr>
                         <button onclick="location.href='{% url 'editnurseprofile' nurse.slug %}'" type="button"
                             class="edit-delete-button">EDIT</button>
-                        <button onclick="location.href='{% url 'delete_print' prints.slug %}'" type="button"
+                        <button onclick="location.href='{% url 'deleteprofile' prints.slug %}'" type="button"
                             class="edit-delete-button">DELETE</button>
                         {% endif %}
                     </div>

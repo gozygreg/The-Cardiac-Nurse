@@ -5,7 +5,6 @@ The Cardiac Nurse website is go-to platform for every nurse that specialise in a
 - [UX](#ux)
 - [User Stories](#user)
 - [Design](#design)
-- [Features](#features)
 - [Testing](#testing)
 - [Technologies](#technologies)
 - [Deployment](#deployment)
@@ -27,32 +26,47 @@ The purpose of the cardiac nurse website is to bring together nurses with intres
 ## User Stories
 ### Admin stories
 As the site administrator (For Nurse Blog app):
-- I can create, read, update and delete post so that I can manage the contents and flow of the site
-- I can create draft posts so that I can finish writing the content later
-- I can approve or disapprove comments so that prevent sharing inappropriate/offensive comments
+1. I can create, read, update and delete post so that I can manage the contents and flow of the site. **Story point: 3**
+2. I can create draft posts so that I can finish writing the content later. **Story point: 2**
+3. I can approve or disapprove comments so that prevent sharing inappropriate/offensive comments. **Story point: 1**
 
 As the site administrator (For Nurse Profile app):
-- I can verify and accept new nurses that what to join the platform so that they can be viewed by site visitors
-- I can add a new nurse profile, update or delete an existing nurse profile so that i can manage the content and flow of nurses in the site 
+1. I can verify and accept new nurses that what to join the platform so that they can be viewed by site visitors. **Story point: 2**
+2. I can add a new nurse profile, update or delete an existing nurse profile so that i can manage the content and flow of nurses in the site. **Story point: 4** 
 ### Nurse stories
 As a nurse registered on the platform:
-- I can upload my profile picture so that other site users can see what I look like
-- I can create a user profile and write about my career journey as a cardiac nurse so that I can be found and viewed on the site
+1. I can upload my profile picture so that other site users can see what I look like. **Story point: 3**
+2. I can create a user profile and write about my career journey as a cardiac nurse so that I can be found and viewed on the site. **Story point: 2**
 ### Site visitors' stories
 As a visitor of the site:
-- I can view any nurse profile so that see their career journey
-- I can signup for an account so that I can like and comment on posts as well as create a profile if I am a cardiac nurse
-- I can view a list of post so that I can select one to read
-- I can click to open a post so that read the content of the post
-- 1 can view a paginated list of post so that I can select a post to view
-- I can be able to like or unlike post so that I can interact with the content
-- I can view the number of likes on individual post so that know the most popular post
-- I can be able to comment on post so that I can be able to leave feedback and engage further
-- I can view comments on each post so that know the most engaging post
+1. I can view any nurse profile so that see their career journey. **Story point: 1**
+2. I can signup for an account so that I can like and comment on posts as well as create a profile if I am a cardiac nurse. **Story point: 2**
+3. I can view a list of post so that I can select one to read. **Story point: 2**
+4. I can click to open a post so that read the content of the post. **Story point: 1**
+5. 1 can view a paginated list of post so that I can select a post to view. **Story point: 2**
+6. I can be able to like or unlike post so that I can interact with the content. **Story point: 2**
+7. I can view the number of likes on individual post so that know the most popular post. **Story point: 2**
+8. I can be able to comment on post so that I can be able to leave feedback and engage further. **Story point: 2**
+9. I can view comments on each post so that know the most engaging post. **Story point: 1**
 
 ## Design
+### Wireframe
 
-## Features
+### Features
+- Home page
+- Nurse profile page
+- Nurse detail page
+- Nurse blog page
+- Blogpost detail page
+- Sign up, Log in and log out pages
+
+### CRUD Fuctionality
+
+### Features for Future Implementation
+- Vancancies/Job opportunity app
+- Research section
+- Article archive
+- Password reset
 
 ## Testing
 

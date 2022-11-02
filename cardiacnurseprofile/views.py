@@ -31,7 +31,7 @@ def submit_profile(request):
             profile_form.save()
             messages.success(
                 request, "Verifing your details! Check back soon.")
-            return redirect('nurseprofile')
+            return redirect('nurse_profile')
         else:
             profile_form = SubmitNurseProfile()
 
@@ -44,15 +44,15 @@ def submit_profile(request):
     )
 
 
-def edit_profile(request):
+def edit_profile(request, slug):
     """
     Edit a nurse profile
     """
-    profile = get_object_or_404(NurseProfile)
+    profile = get_object_or_404(NurseProfile, slug=slug)
     form_edit = SubmitNurseProfile(request.POST or None, instance=profile)
     context = {
-        'profile': profile,
-        'form_edit': form_edit
+        'form_edit': form_edit,
+        'profile': profile
     }
 
     if request.method == 'POST':
@@ -61,20 +61,20 @@ def edit_profile(request):
         )
         if form_edit.is_valid():
             profile = form_edit.save(commit=False)
-            profile.nurse_name = request.User
+            profile.nurse_name = request.user
             profile.save()
             return redirect('nurseprofile')
-        else:
-            form_edit = SubmitNurseProfile(instance=profile)
+    else:
+        form_edit = SubmitNurseProfile(instance=profile)
 
-        return render(request, 'editnurseprofile.html', context)
+    return render(request, 'editnurseprofile.html', context)
 
 
-def delete_profile(request):
+def delete_profile(request, slug):
     """
     Delete a nurse profile
     """
-    profile = get_object_or_404(NurseProfile)
+    profile = get_object_or_404(NurseProfile, slug=slug)
     profile.delete()
     return redirect('nurseprofile')
 
@@ -85,6 +85,9 @@ class NurseDetails(View):
     details on the browser
     """
     def get(self, request, slug, *args, **kwargs):
+        """
+        render individual nurse profile
+        """
         queryset = NurseProfile.objects.filter(status=1)
         nurse = get_object_or_404(queryset, slug=slug)
         return render(
