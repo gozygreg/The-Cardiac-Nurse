@@ -20,11 +20,35 @@ The purpose of the cardiac nurse website is to bring together nurses with intres
 ### User Goals
 - User/nurse is able to join platform, create a profile and update their professional experience/journey as a cardiac nurse
 - User/nurse is able to access blogpost and stay up-to-date with treatment guildelines in various aspect of cardiology
-### Site visitor's Goal
+### Site visitors' Goals
 - Site visitors are able to see the profile and professional experience/journey of nurses who registered
 - Site visitors are able to read the various blog posts on the site.
 
 ## User Stories
+### Admin stories
+As the site administrator (For Nurse Blog app):
+- I can create, read, update and delete post so that I can manage the contents and flow of the site
+- I can create draft posts so that I can finish writing the content later
+- I can approve or disapprove comments so that prevent sharing inappropriate/offensive comments
+
+As the site administrator (For Nurse Profile app):
+- I can verify and accept new nurses that what to join the platform so that they can be viewed by site visitors
+- I can add a new nurse profile, update or delete an existing nurse profile so that i can manage the content and flow of nurses in the site 
+### Nurse stories
+As a nurse registered on the platform:
+- I can upload my profile picture so that other site users can see what I look like
+- I can create a user profile and write about my career journey as a cardiac nurse so that I can be found and viewed on the site
+### Site visitors' stories
+As a visitor of the site:
+- I can view any nurse profile so that see their career journey
+- I can signup for an account so that I can like and comment on posts as well as create a profile if I am a cardiac nurse
+- I can view a list of post so that I can select one to read
+- I can click to open a post so that read the content of the post
+- 1 can view a paginated list of post so that I can select a post to view
+- I can be able to like or unlike post so that I can interact with the content
+- I can view the number of likes on individual post so that know the most popular post
+- I can be able to comment on post so that I can be able to leave feedback and engage further
+- I can view comments on each post so that know the most engaging post
 
 ## Design
 
