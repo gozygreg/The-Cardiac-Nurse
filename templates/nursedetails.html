@@ -27,13 +27,22 @@
                     <hr />
                     <h3>------- Career Journey -------</h3>
                     <p>{{ nurse.description | safe }}</p>
+
                     <div>
-                        {% if request.user == nurse.nurse_name %}
+                        <!-- {% if user.is_authenticated %} -->
+                        <!-- <hr>
+                        <a href="{% url 'editnurseprofile' nurse.slug %}">
+                            <button>Edit</button>
+                        </a>
+                        <a href="/delete/{{ nurse.slug }}">
+                            <button>Delete</button>
+                        </a> -->
+
+                        <!-- {% endif %} -->
+                        {% if user.is_superuser %}
                         <hr>
                         <button onclick="location.href='{% url 'editnurseprofile' nurse.slug %}'" type="button"
                             class="edit-delete-button">EDIT</button>
-                        <button onclick="location.href='{% url 'deleteprofile' prints.slug %}'" type="button"
-                            class="edit-delete-button">DELETE</button>
                         {% endif %}
                     </div>
                 </div>

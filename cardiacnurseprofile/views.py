@@ -27,7 +27,7 @@ def submit_profile(request):
     if request.method == 'POST':
         profile_form = SubmitNurseProfile(request.POST, request.FILES)
         if profile_form.is_valid():
-            profile_form.instance.print_name = request.user
+            profile_form.instance.nurse_name = request.user
             profile_form.save()
             messages.success(
                 request, "Verifing your details! Check back soon.")
