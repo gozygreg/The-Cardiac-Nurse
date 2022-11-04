@@ -27,7 +27,7 @@ def submit_profile(request):
     if request.method == 'POST':
         profile_form = SubmitNurseProfile(request.POST, request.FILES)
         if profile_form.is_valid():
-            profile_form.instance.nurse_name = request.user
+            profile_form.instance.profile_owner = request.user
             profile_form.save()
             messages.success(
                 request, "Verifing your details! Check back soon.")
@@ -61,7 +61,7 @@ def edit_profile(request, slug):
         )
         if form_edit.is_valid():
             profile = form_edit.save(commit=False)
-            profile.nurse_name = request.user
+            profile.profile_owner = request.user
             profile.save()
             return redirect('nurseprofile')
     else:

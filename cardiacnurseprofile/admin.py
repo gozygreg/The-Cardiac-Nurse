@@ -14,12 +14,12 @@ class NurseProfileAdmin(SummernoteModelAdmin):
     on django admin panel
     """
     prepopulated_fields = {'slug': ('nurse_name',)}
-    list_display = ('nurse_name', 'specialty', 'profile_owner', 'status')
-    list_filter = ('specialty', 'profile_owner', 'created_on')
+    list_display = ('nurse_name', 'specialty', 'status')
+    list_filter = ('specialty', 'created_on')
     search_fields = ('nurse_name', 'specialty')
     actions = ['verify_nurse']
     summernote_fields = ('description')
-    fields = ('nurse_name', 'specialty', 'profile_owner', 'description', 'nurse_image', 'slug',)
+    fields = ('nurse_name', 'specialty', 'description', 'nurse_image', 'slug',)
 
     def verify_nurse(self, request, queryset):
         """

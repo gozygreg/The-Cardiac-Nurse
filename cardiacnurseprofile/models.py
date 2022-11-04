@@ -30,7 +30,7 @@ class NurseProfile(models.Model):
     nurse_image = CloudinaryField('image', null=False, blank=False)
     status = models.IntegerField(choices=STATUS, default=0)
     created_on = models.DateTimeField(auto_now=True)
-    profile_owner = models.ForeignKey(
+    profile_creator = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name='nurse_profile', default=None)
 
     def __str__(self):
