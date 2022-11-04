@@ -27,7 +27,7 @@ def submit_profile(request):
     if request.method == 'POST':
         profile_form = SubmitNurseProfile(request.POST, request.FILES)
         if profile_form.is_valid():
-            profile_form.instance.profile_owner = request.user
+            profile_form.instance.profile_creator = request.user
             profile_form.save()
             messages.success(
                 request, "Verifing your details! Check back soon.")
@@ -61,9 +61,9 @@ def edit_profile(request, slug):
         )
         if form_edit.is_valid():
             profile = form_edit.save(commit=False)
-            profile.profile_owner = request.user
+            profile.profile_creator = request.user
             profile.save()
-            return redirect('nurseprofile')
+            return redirect('nurse_profile')
     else:
         form_edit = SubmitNurseProfile(instance=profile)
 
@@ -76,7 +76,7 @@ def delete_profile(request, slug):
     """
     profile = get_object_or_404(NurseProfile, slug=slug)
     profile.delete()
-    return redirect('nurseprofile')
+    return redirect('nurse_profile')
 
 
 class NurseDetails(View):
