@@ -4,24 +4,19 @@
 
 {% load crispy_forms_tags %}
 
-<div class="masthead">
-    <div class="container">
-        <div class="row g-0">
-            <div class="col-md-6 masthead-text">
-                <!-- Post title goes in these h1 tags -->
-                <h1 class="post-title">{{ post.title }}</h1>
-                <!-- Post author goes before the | the post's created date goes after -->
-                <p class="post-subtitle"> {{ post.author }}| {{ post.created_on }} </p>
-            </div>
-            <div class="col-md-6 masthead-image">
-                <!-- The featured image URL goes in the src attribute -->
-                {% if "placeholder" in post.featured_image.url %}
-                <img src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg" width="100%">
-                {% else %}
-                <img src=" {{ post.featured_image.url }}" width="100%">
-                {% endif %}
-            </div>
-        </div>
+<div class="jumbotron" style="padding:0">
+    <div class="py-5 text-center">
+        <!-- Post title and author goes in these h1 tags -->
+        <h1 class="display-4 font-weight-bold">{{ post.title }}</h1>
+        <p class="post-subtitle mb-0"> {{ post.author }}| {{ post.created_on }} </p>
+        <p class="font-italic">
+            {% if "placeholder" in post.featured_image.url %}
+            <img src="https://images.pexels.com/photos/8814070/pexels-photo-8814070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                width="100%">
+            {% else %}
+            <img src=" {{ post.featured_image.url }}" width="100%">
+            {% endif %}
+        </p>
     </div>
 </div>
 
@@ -36,29 +31,29 @@
                 </p>
                 <div class="row">
 
-                    <div class="col-1">
+                    <div class="col-2">
                         <strong>
                             {% if user.is_authenticated %}
-                            <form class="d-inline" action="{% url 'post_like' post.slug %}" method="POST"></form>
-                            {% csrf_token %}
-                            {% if liked %}
+                            <form class="d-inline" action="{% url 'post_like' post.slug %}" method="POST">
+                                {% csrf_token %}
+                                {% if liked %}
 
-                            <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i
-                                    class="fas fa-heart"></i></button>
-                            {% else %}
+                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i
+                                        class="fas fa-heart"></i> {{ post.number_of_likes }}</button>
+                                {% else %}
 
-                            <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i
-                                    class="far fa-heart"></i></button>
-                            {% endif %}
+                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i
+                                        class="far fa-heart"></i></button>
+                                {% endif %}
                             </form>
                             {% else %}
-                            <span class="text-secondary"><i class="far fa-heart"></i></span>
+                            <span class="text-secondary"><i class="far fa-heart"> {{ post.number_of_likes }}</i></span>
                             {% endif %}
                             <!-- The number of likes goes before the closing strong tag -->
                             <span class="text-secondary"><i class="far fa-heart"></i> {{ post.number_of_likes }} </span>
                         </strong>
                     </div>
-                    <div class="col-1">
+                    <div class="col-3">
                         {% with comments.count as total_comments %}
                         <strong class="text-secondary"><i class="far fa-comments"></i>
                             <!-- Our total_comments variable goes before the closing strong tag -->

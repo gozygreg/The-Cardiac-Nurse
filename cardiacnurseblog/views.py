@@ -107,7 +107,7 @@ class BlogPostLike(View):
         post = get_object_or_404(NurseBlog, slug=slug)
 
         if post.likes.filter(id=request.user.id).exists():
-            post.like.remove(request.user)
+            post.likes.remove(request.user)
         else:
             post.likes.add(request.user)
 
