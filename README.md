@@ -51,6 +51,15 @@ As a visitor of the site:
 
 ## Design
 ### Wireframe
+### Functional Structure
+### Database Structure
+Three models were created to produce the required database structure.
+- Nurse profile model: Contains all the information about a particular nurse in the database. This model has the name of the nurse and the creator of the profile, date  profile was created, image or picture on the profile, his or her specialty in nursing, his job description or career experience and status of the profile (published or not published).
+- Blog model: Contains all the information about the blog post such as title of blog post, authur, image, excerpt, likes, date updated and status of blog post (draft or published).
+- Comment model: Create the ability for loggin users to submit their thoughts or contributions to posts as well as the ability of site administrator to approve or disapprove any comments.
+- The blog and comment model was an inspiration from code institute django walkthrough project "I think therefore I blog".
+<img width="554" alt="Screenshot 2022-11-08 at 00 34 08" src="https://user-images.githubusercontent.com/69070044/200445609-b18d1ea8-1798-4e76-9db8-d2d9c9867700.png">
+
 
 ### Features
 - Home page
