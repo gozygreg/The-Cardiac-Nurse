@@ -51,6 +51,30 @@ As a visitor of the site:
 
 ## Design
 ### Wireframe
+- Home Page
+![Home page (Alternate 899t)](https://user-images.githubusercontent.com/69070044/200598172-65bd1d71-965c-43df-bd26-48fdeca7273c.png)
+
+- Nurse Profile Page
+![Our Nurse page](https://user-images.githubusercontent.com/69070044/200598318-b714ba7d-2432-4f5f-89c2-2879563d7d2a.png)
+
+- Nurse Profile Detail Page
+![Nurse profile page](https://user-images.githubusercontent.com/69070044/200598243-37067813-6ee3-4a6b-bbed-e482a84bc87b.png)
+
+- Edit Profile Page
+![Edit page](https://user-images.githubusercontent.com/69070044/200598421-25afcb4f-a894-4eef-a35d-bce2e8f896c9.png)
+
+- Blog Page
+![Nurse blog page](https://user-images.githubusercontent.com/69070044/200598497-a1afe92a-b991-4cde-a537-c3a4ce109b1d.png)
+
+- Blog Detail Page
+![blog detail page](https://user-images.githubusercontent.com/69070044/200598622-fc429b95-6efd-46f1-a59d-3a06197ef66d.png)
+
+- Signup/Register Page
+![signup page](https://user-images.githubusercontent.com/69070044/200598614-e641d0b0-4fcd-4696-8aa3-32d94e79c105.png)
+
+- Logout Page
+![Logout page](https://user-images.githubusercontent.com/69070044/200598656-0f8f6fed-26bd-4e8e-8382-f933071ffce6.png)
+
 ### Functional Structure
 ### Database Structure
 Three models were created to produce the required database structure.
