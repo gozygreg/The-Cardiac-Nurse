@@ -5,7 +5,7 @@
 {% load crispy_forms_tags %}
 
 <div class="jumbotron" style="padding:0">
-    <div class="py-5 text-center">
+    <div class="pt-3 text-center">
         <!-- Post title and author goes in these h1 tags -->
         <h1 class="display-4 font-weight-bold">{{ post.title }}</h1>
         <p class="post-subtitle mb-0"> {{ post.author }}| {{ post.created_on }} </p>
@@ -22,7 +22,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="col card mb-4  mt-3 left  top">
+        <div class="col card mb-1 left top">
             <div class="card-body">
                 <!-- The post content goes inside the card-text. -->
                 <!-- Use the | safe filter inside the template tags -->
@@ -31,7 +31,7 @@
                 </p>
                 <div class="row">
 
-                    <div class="col-2">
+                    <div class="col-4">
                         <strong>
                             {% if user.is_authenticated %}
                             <form class="d-inline" action="{% url 'post_like' post.slug %}" method="POST">

@@ -34,7 +34,7 @@ a {
 
 
 .nursedetail {
-    padding-bottom: 50px;
+    padding-bottom: 52px;
 }
 
 .light-bg {
@@ -49,6 +49,8 @@ a {
     background-color: black;
 } */
 
+
+
 footer {
     position: absolute;
     bottom: 0;
@@ -62,6 +64,7 @@ footer {
     background-color: black;
     color: #fff;
 }
+
 
 .bg-img {
     max-width: 100%;
@@ -84,7 +87,7 @@ footer {
 }
 
 .nursedetail {
-    padding-bottom: 50px;
+    padding-bottom: 52px;
 }
 
 /* NURSEBLOG AND BLOGPOST_DETAIL.HTML PAGES */
@@ -139,7 +142,8 @@ footer {
 .home-button,
 .btn-signup,
 .submit-button,
-.pagination-button {
+.pagination-button,
+.detail-button {
     width: 220px;
     height: 50px;
     border: none;
@@ -156,7 +160,8 @@ footer {
 .home-button:before,
 .btn-signup:before,
 .submit-button:before,
-.pagination-button:before {
+.pagination-button:before,
+.detail-button:before {
     content: '';
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     position: absolute;
@@ -177,7 +182,8 @@ footer {
 .home-button:active,
 .btn-signup:active,
 .submit-button:active,
-.pagination-button:active {
+.pagination-button:active,
+.detail-button:active {
     color: #000
 }
 
@@ -185,7 +191,8 @@ footer {
 .home-button:active:after,
 .btn-signup:active:after,
 .submit-button:active:after,
-.pagination-button:active:after {
+.pagination-button:active:after,
+.detail-button:active:after {
     background: transparent;
 }
 
@@ -193,7 +200,8 @@ footer {
 .home-button:hover:before,
 .btn-signup:hover:before,
 .submit-button:hover:before,
-.pagination-button:before {
+.pagination-button:before,
+.detail-button:before {
     opacity: 1;
 }
 
@@ -201,7 +209,8 @@ footer {
 .home-button:after,
 .btn-signup:after,
 .submit-button:after,
-.pagination-button:after {
+.pagination-button:after,
+.detail-button:after {
     z-index: -1;
     content: '';
     position: absolute;
@@ -250,4 +259,8 @@ footer {
 @media screen and (max-width:768px) {}
 
 /* MOBILE DEVICES */
-@media screen and (max-width:480px) {}
+@media screen and (max-width:480px) {
+    h1 {
+        font-size: 1.8em;
+    }
+}

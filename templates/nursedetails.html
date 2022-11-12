@@ -32,9 +32,9 @@
                     <hr class="adjust">
                     <p>You created this profile, so you can edit or delete it by clicking the button below</p>
                     <button onclick="location.href='{% url 'editnurseprofile' nurse.slug %}'" type="button"
-                        class="edit-delete-button">EDIT</button>
+                        class="detail-button">EDIT</button>
                     <button onclick="location.href='{% url 'deleteprofile' nurse.slug %}'" type="button"
-                        class="edit-delete-button">DELETE</button>
+                        class="detail-button">DELETE</button>
                     {% else %}
                     <p> You are not a profile creator </p>
                     {% endif %}
