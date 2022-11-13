@@ -57,4 +57,3 @@ class NurseProfile(models.Model):
         instead of the model ID
         """
         return self.nurse_name
-

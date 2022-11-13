@@ -11,10 +11,11 @@
         <p class="post-subtitle mb-0"> {{ post.author }}| {{ post.created_on }} </p>
         <p class="font-italic">
             {% if "placeholder" in post.featured_image.url %}
-            <img src="https://images.pexels.com/photos/8814070/pexels-photo-8814070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                width="100%">
+            <img class="default-img"
+                src="https://images.pexels.com/photos/8814070/pexels-photo-8814070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="default image">
             {% else %}
-            <img src=" {{ post.featured_image.url }}" width="100%">
+            <img class="default-img" src="{{ post.featured_image.url }}" alt="{{ post.title }}">
             {% endif %}
         </p>
     </div>

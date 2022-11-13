@@ -100,7 +100,7 @@ footer {
 
 
 .author {
-    color: white;
+    color: #005eb8;
     margin: 4px;
     text-transform: uppercase;
 }
@@ -245,6 +245,9 @@ footer {
     color: white;
 }
 
+.default-img {
+    width: 100%;
+}
 
 /* SIGNUP, LOGOUT AND LOGIN.HTML PAGES */
 

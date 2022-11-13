@@ -52,35 +52,27 @@ As a visitor of the site:
 ## Design
 ### Wireframe
 - Home Page
-
 ![Home page (Alternate 899t)](https://user-images.githubusercontent.com/69070044/200598172-65bd1d71-965c-43df-bd26-48fdeca7273c.png)
 
 - Nurse Profile Page
-
 ![Our Nurse page](https://user-images.githubusercontent.com/69070044/200598318-b714ba7d-2432-4f5f-89c2-2879563d7d2a.png)
 
 - Nurse Profile Detail Page
-
 ![Nurse profile page](https://user-images.githubusercontent.com/69070044/200598243-37067813-6ee3-4a6b-bbed-e482a84bc87b.png)
 
 - Edit Profile Page
-
 ![Edit page](https://user-images.githubusercontent.com/69070044/200598421-25afcb4f-a894-4eef-a35d-bce2e8f896c9.png)
 
 - Blog Page
-
 ![Nurse blog page](https://user-images.githubusercontent.com/69070044/200598497-a1afe92a-b991-4cde-a537-c3a4ce109b1d.png)
 
 - Blog Detail Page
-
 ![blog detail page](https://user-images.githubusercontent.com/69070044/200598622-fc429b95-6efd-46f1-a59d-3a06197ef66d.png)
 
 - Signup/Register Page
-
 ![signup page](https://user-images.githubusercontent.com/69070044/200598614-e641d0b0-4fcd-4696-8aa3-32d94e79c105.png)
 
 - Logout Page
-
 ![Logout page](https://user-images.githubusercontent.com/69070044/200598656-0f8f6fed-26bd-4e8e-8382-f933071ffce6.png)
 
 ### Functional Structure
@@ -124,13 +116,16 @@ Three models were created to produce the required database structure.
 CREATE:
 - By clicking the button 'Join our platform' in the website, authenticated users/nurses are able to create a profile
 <img width="1280" alt="Create" src="https://user-images.githubusercontent.com/69070044/201519597-2a76d79d-20fd-466a-bddf-8201fa02a6c6.png">
+
 - This button is only visible to users that have signed in or registered.
 <img width="1280" alt="CreateofCrud" src="https://user-images.githubusercontent.com/69070044/201519594-ec8918bc-5bb1-4908-a7ec-2513a44884a5.png">
+
 READ:
 - Users (registered or not registered) are able to see various nurse profiles and blog posts available on the website
 UPDATE & DELETE:
 - Users who are signed in/registered and have gone further to create a profile are able to edit/update as well as delete their profile should they wish to. This can be done using the edit and delete button respectively in the profile detail page on the website.
 <img width="1280" alt="crUD" src="https://user-images.githubusercontent.com/69070044/201519611-faa2f733-1a44-4a69-ae16-f0f0bf1998c1.png">
+
 - On the backend side of thing in django admin panel, the site administrator is able to perform all the CRUD functionality on both the profile app and blog app.
 
 ### Features for Future Implementation
@@ -140,6 +135,19 @@ UPDATE & DELETE:
 - Password reset
 
 ## Testing
+### Validator Testing
+- All html files in the template directory were passed through the [W3C validator](https://validator.w3.org/) with no errors found other than those listed in reference to templating style syntax; {%%} and {{}} tags
+<img width="1280" alt="html validator" src="https://user-images.githubusercontent.com/69070044/201546606-9dd88c70-e147-4705-b0c9-a6ae6e2b7ac2.png">
+
+- CSS file has been passed through [Jigsaw validator](https://jigsaw.w3.org/css-validator) with no issues found
+<img width="1280" alt="css validator" src="https://user-images.githubusercontent.com/69070044/201546693-42ab2f73-a790-4475-946a-834a4a1500e6.png">
+
+- All python code was subjected to [PEP8 Online](https://www.pythonchecker.com/) with no significant issues other than some line of code being longer than 79 characters and the need to add two lines in front of a function definition.
+<img width="1280" alt="pep8" src="https://user-images.githubusercontent.com/69070044/201548367-2e0594f2-0554-43f1-bba2-dfb0ad264fd9.png">
+
+- All social links are working and open to external pages
+
+- Site checked and is working in various browsers such as Chrome and Safari
 
 ## Technologies
 ### Programming Languages
@@ -150,16 +158,16 @@ UPDATE & DELETE:
 - SQL
 - Postgres
 ### Frameworks and Libraries
-- Django
-- Bootstap
-- Gitpod
-- Github
-- Google Fonts
-- Font Awesome
-- Balsamqid
-- Am I Resposive
-- Adobe stock images
-- Image resizer
+- [Django](https://www.djangoproject.com/)
+- [Bootstrap](https://getbootstrap.com/)
+- [Gitpod](https://www.gitpod.io/)
+- [Github](https://github.com/)
+- [Google Fonts](https://fonts.google.com/about)
+- [Font Awesome](https://fontawesome.com/)
+- [Balsamqid](https://balsamiq.com/)
+- [Am I Resposive](https://ui.dev/amiresponsive)
+- [Adobe stock images](https://stock.adobe.com/uk)
+- [Image resizer](https://imageresizer.com/)
 ### Installed Packages
 - 'django<4' gunicorn
 - dj_database_url psycopg2
