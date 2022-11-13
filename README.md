@@ -1,6 +1,8 @@
 # THE CARDIAC NURSE
 The Cardiac Nurse website is go-to platform for every nurse that specialise in anything that has to do with the cardiovascular system. It is an educational medium that all nurses can learn from, particularly those with keen intrest in cardiology.
 
+<img width="1041" alt="Responsive" src="https://user-images.githubusercontent.com/69070044/201549312-97292c00-b1b1-4715-986c-0881a7aff5e0.png">
+
 # Table of Contents
 - [UX](#ux)
 - [User Stories](#user)
