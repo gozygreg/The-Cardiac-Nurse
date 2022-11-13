@@ -52,27 +52,35 @@ As a visitor of the site:
 ## Design
 ### Wireframe
 - Home Page
+
 ![Home page (Alternate 899t)](https://user-images.githubusercontent.com/69070044/200598172-65bd1d71-965c-43df-bd26-48fdeca7273c.png)
 
 - Nurse Profile Page
+
 ![Our Nurse page](https://user-images.githubusercontent.com/69070044/200598318-b714ba7d-2432-4f5f-89c2-2879563d7d2a.png)
 
 - Nurse Profile Detail Page
+
 ![Nurse profile page](https://user-images.githubusercontent.com/69070044/200598243-37067813-6ee3-4a6b-bbed-e482a84bc87b.png)
 
 - Edit Profile Page
+
 ![Edit page](https://user-images.githubusercontent.com/69070044/200598421-25afcb4f-a894-4eef-a35d-bce2e8f896c9.png)
 
 - Blog Page
+
 ![Nurse blog page](https://user-images.githubusercontent.com/69070044/200598497-a1afe92a-b991-4cde-a537-c3a4ce109b1d.png)
 
 - Blog Detail Page
+
 ![blog detail page](https://user-images.githubusercontent.com/69070044/200598622-fc429b95-6efd-46f1-a59d-3a06197ef66d.png)
 
 - Signup/Register Page
+
 ![signup page](https://user-images.githubusercontent.com/69070044/200598614-e641d0b0-4fcd-4696-8aa3-32d94e79c105.png)
 
 - Logout Page
+
 ![Logout page](https://user-images.githubusercontent.com/69070044/200598656-0f8f6fed-26bd-4e8e-8382-f933071ffce6.png)
 
 ### Functional Structure
@@ -87,13 +95,43 @@ Three models were created to produce the required database structure.
 
 ### Features
 - Home page
+
+<img width="993" alt="home" src="https://user-images.githubusercontent.com/69070044/201520809-f00fb672-35b7-482a-a7a5-0e9bf2ec2096.png">
+
 - Nurse profile page
-- Nurse detail page
+
+<img width="820" alt="profilepage" src="https://user-images.githubusercontent.com/69070044/201520815-6ffe1f25-b948-46ea-a180-d3ee37cde434.png">
+
+- Nurse profile detail page
+
+<img width="492" alt="profile detail" src="https://user-images.githubusercontent.com/69070044/201520816-a7f518bc-536c-463f-a029-8fd01dcd57f2.png">
+
 - Nurse blog page
+
+<img width="762" alt="blogpage" src="https://user-images.githubusercontent.com/69070044/201520823-e09a9a39-5645-4efb-a343-de3cee281ef2.png">
+
 - Blogpost detail page
+
+<img width="445" alt="blogdetail" src="https://user-images.githubusercontent.com/69070044/201520827-5f80cb8f-4afe-43f4-9359-b2cc872d32d9.png">
+
 - Sign up, Log in and log out pages
 
+<img width="936" alt="signup" src="https://user-images.githubusercontent.com/69070044/201520832-6ced2e5d-544b-459d-9dae-ec09fbb41c1c.png">
+
+<img width="945" alt="signin" src="https://user-images.githubusercontent.com/69070044/201520836-59fa3c39-f9c5-4ec6-b55e-1845ed19b711.png">
+
 ### CRUD Fuctionality
+CREATE:
+- By clicking the button 'Join our platform' in the website, authenticated users/nurses are able to create a profile
+<img width="1280" alt="Create" src="https://user-images.githubusercontent.com/69070044/201519597-2a76d79d-20fd-466a-bddf-8201fa02a6c6.png">
+- This button is only visible to users that have signed in or registered.
+<img width="1280" alt="CreateofCrud" src="https://user-images.githubusercontent.com/69070044/201519594-ec8918bc-5bb1-4908-a7ec-2513a44884a5.png">
+READ:
+- Users (registered or not registered) are able to see various nurse profiles and blog posts available on the website
+UPDATE & DELETE:
+- Users who are signed in/registered and have gone further to create a profile are able to edit/update as well as delete their profile should they wish to. This can be done using the edit and delete button respectively in the profile detail page on the website.
+<img width="1280" alt="crUD" src="https://user-images.githubusercontent.com/69070044/201519611-faa2f733-1a44-4a69-ae16-f0f0bf1998c1.png">
+- On the backend side of thing in django admin panel, the site administrator is able to perform all the CRUD functionality on both the profile app and blog app.
 
 ### Features for Future Implementation
 - Vancancies/Job opportunity app
