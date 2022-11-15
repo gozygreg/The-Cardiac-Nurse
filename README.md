@@ -11,6 +11,7 @@ The Cardiac Nurse website is go-to platform for every nurse that specialise in a
 - [Technologies](#technologies)
 - [Deployment](#deployment)
 - [Credits](#credits)
+- [Dedication](#dedication)
 
 ## Ux
 ### Site Aim
@@ -206,4 +207,10 @@ The site was deployed to Heroku. The steps used are as follows:
 - connected my github project repository, and then clicked on the "Deploy" button
 
 ## Credits
+- My code institute mentor Martina Terlevic for her constant guide and support
+- Student care support from Oisin tahak.
+- [Stackoverflow platform](https://stackoverflow.com/)
+- The buttons in the site is styled by inspiration from [webdeasy.de](https://webdeasy.de/)
 
+## Dedication
+- This project is dedicated to my wife and son who was born 2 weeks before the submission deadline. 
