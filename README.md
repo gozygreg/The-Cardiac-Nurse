@@ -5,7 +5,7 @@ The Cardiac Nurse website is go-to platform for every nurse that specialise in a
 
 # Table of Contents
 - [UX](#ux)
-- [User Stories](#user)
+- [Agile](#agile)
 - [Design](#design)
 - [Testing](#testing)
 - [Technologies](#technologies)
@@ -25,7 +25,8 @@ The purpose of the cardiac nurse website is to bring together nurses with intres
 - Site visitors are able to see the profile and professional experience/journey of nurses who registered
 - Site visitors are able to read the various blog posts on the site.
 
-## User Stories
+## Agile
+The plan for this project was carried out using the Agile Methodology in Github. User Stories were created using [issues](https://github.com/gozygreg/The-Cardiac-Nurse/issues) on git hub. Each user story explicitly explains the purpose of the issues. Each story was assigned a classification of must-have, should-have, could-have or future-have.. It was prioritised using GitHub labels with different colors. See link to kanban board [here](https://github.com/users/gozygreg/projects/14/views/1)
 ### Admin stories
 As the site administrator (For Nurse Blog app):
 1. I can create, read, update and delete post so that I can manage the contents and flow of the site. **Story point: 3**
@@ -146,6 +147,11 @@ UPDATE & DELETE:
 
 - All python code was subjected to [PEP8 Online](https://www.pythonchecker.com/) with no significant issues other than some line of code being longer than 79 characters and the need to add two lines in front of a function definition.
 <img width="1280" alt="pep8" src="https://user-images.githubusercontent.com/69070044/201548367-2e0594f2-0554-43f1-bba2-dfb0ad264fd9.png">
+
+### Lighthouse Testing
+
+### Python and JavaScript Testing
+All Custom Python & JavaScript code was manually tested multiple times during and after development. This is reflected in the fact that all of the user stories below are working and have produced no errors in the terminal or the console.
 
 - All social links are working and open to external pages
 
