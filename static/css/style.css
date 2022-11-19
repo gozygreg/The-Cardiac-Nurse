@@ -106,6 +106,7 @@ footer {
 }
 
 
+
 .post-link {
     text-decoration: none;
     color: #005eb8
@@ -249,6 +250,19 @@ footer {
     width: 100%;
 }
 
+.bcs-advert {
+    color: white;
+}
+
+.spotlight {
+    background-image: url("https://res.cloudinary.com/dezgpatyj/image/upload/v1667860888/static/images/blueheart.590b850de1e0.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-position: 550px;
+}
+
 /* SIGNUP, LOGOUT AND LOGIN.HTML PAGES */
 
 /* VERY LARGE SCREENS */
@@ -259,7 +273,12 @@ footer {
 }
 
 /* MEDIUM SCREENS: LAPTOPS AND TABLETS */
-@media screen and (max-width:950px) {}
+@media screen and (max-width:950px) {
+    .bcs-advert {
+        display: none;
+    }
+}
+
 
 /* IPADS */
 @media screen and (max-width:768px) {}
@@ -268,5 +287,15 @@ footer {
 @media screen and (max-width:480px) {
     h1 {
         font-size: 1.8em;
+    }
+
+    .home-button {
+        width: 50%;
+        font-size: 1em;
+    }
+
+    .spotlight {
+        background-position: -100px;
+        background-size: cover;
     }
 }
