@@ -102,7 +102,7 @@ Three models were created to produce the required database structure.
 
 <img width="492" alt="profile detail" src="https://user-images.githubusercontent.com/69070044/201520816-a7f518bc-536c-463f-a029-8fd01dcd57f2.png">
 
-- Site advert section: This section is beneath the profile of each nurse and it has an external link to the british cardiovascular society.
+- Site advert section: This section is beneath the profile of each nurse and it has an external link to the british cardiovascular society. Details of this advert is hidden on small devices
 
 <img width="1280" alt="bcs advert section" src="https://user-images.githubusercontent.com/69070044/202856828-bea3ee56-9294-4890-9a96-49e9250dd12d.png">
 
