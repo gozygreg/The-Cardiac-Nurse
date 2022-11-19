@@ -15,11 +15,6 @@ body {
 
 }
 
-
-/* .naver {
-    background-color: #d0d0d0;
-} */
-
 h1 {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
@@ -32,11 +27,6 @@ a {
     text-decoration: none;
 }
 
-
-.nursedetail {
-    padding-bottom: 52px;
-}
-
 .light-bg {
     background-color: #fff;
 }
@@ -44,12 +34,6 @@ a {
 .dark-bg {
     background-color: #445261;
 }
-
-/* .main-bg {
-    background-color: black;
-} */
-
-
 
 footer {
     position: absolute;
@@ -65,12 +49,10 @@ footer {
     color: #fff;
 }
 
-
 .bg-img {
     max-width: 100%;
     max-height: 100%;
 }
-
 
 .index_pg-img {
     height: 300px;
@@ -83,11 +65,28 @@ footer {
 
 /* NURSEPROFILE AND NURSEDETAIL.HTML PAGES */
 .card-body {
+    color: black
+}
+
+.bcs-color {
     color: #005eb8
+}
+
+.bcs-advert {
+    color: white;
 }
 
 .nursedetail {
     padding-bottom: 52px;
+}
+
+.spotlight {
+    background-image: url("https://res.cloudinary.com/dezgpatyj/image/upload/v1667860888/static/images/blueheart.590b850de1e0.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-position: 550px;
 }
 
 /* NURSEBLOG AND BLOGPOST_DETAIL.HTML PAGES */
@@ -96,16 +95,15 @@ footer {
     background-color: transparent;
 }
 
-
-
+.career {
+    font-size: larger;
+}
 
 .author {
     color: #005eb8;
     margin: 4px;
     text-transform: uppercase;
 }
-
-
 
 .post-link {
     text-decoration: none;
@@ -127,15 +125,17 @@ footer {
     color: lightgray;
 }
 
-.link {
-    color: #23BBBB;
-    text-decoration: none;
+.jumbotron {
+    padding-top: 20%;
+    padding-bottom: 20%;
 }
 
-.link:hover,
-.link:active {
-    color: #445261;
-    text-decoration: underline;
+.fab {
+    color: white;
+}
+
+.default-img {
+    width: 100%;
 }
 
 /* SITE BUTTONS (Code snippet gotten from webdeasy.de) */
@@ -237,34 +237,6 @@ footer {
     }
 }
 
-.jumbotron {
-    padding-top: 20%;
-    padding-bottom: 20%;
-}
-
-.fab {
-    color: white;
-}
-
-.default-img {
-    width: 100%;
-}
-
-.bcs-advert {
-    color: white;
-}
-
-.spotlight {
-    background-image: url("https://res.cloudinary.com/dezgpatyj/image/upload/v1667860888/static/images/blueheart.590b850de1e0.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 400px;
-    background-repeat: no-repeat;
-    background-position: 550px;
-}
-
-/* SIGNUP, LOGOUT AND LOGIN.HTML PAGES */
-
 /* VERY LARGE SCREENS */
 @media screen and (min-width:950px) {
     .adjust {
@@ -278,10 +250,6 @@ footer {
         display: none;
     }
 }
-
-
-/* IPADS */
-@media screen and (max-width:768px) {}
 
 /* MOBILE DEVICES */
 @media screen and (max-width:480px) {

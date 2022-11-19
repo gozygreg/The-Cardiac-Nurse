@@ -23,8 +23,9 @@
         <div class="col-sm-6">
             <div class="card mb-4">
                 <div class="card-body">
-                    <h2 class="text-center">Area of interest:</h2>
-                    <h2>{{ nurse.specialty }}</h2>
+                    <h2 class="text-center">Area of interest: <span
+                            class="badge rounded-pill text-bg-danger">{{ nurse.specialty }}</span>
+                    </h2>
                     <hr />
                     <h3 class="text-center">Career Journey</h3>
                     <p>{{ nurse.description | safe }}</p>
@@ -48,7 +49,7 @@
             <div class="card">
                 <h5 class="card-header"></h5>
                 <div class="card-body">
-                    <h5 class="card-title text-center"><b>British Cardiovascular Society (BCS)</b></h5>
+                    <h5 class="card-title text-center bcs-color"><b>British Cardiovascular Society (BCS)</b></h5>
                     <p class="bcs-advert">Founded in 1922, the British Cardiovascular Society (BCS)
                         has evolved into a
                         complex organisation that plays a pivotal role in the delivery of cardiovascular health across

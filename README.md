@@ -102,6 +102,10 @@ Three models were created to produce the required database structure.
 
 <img width="492" alt="profile detail" src="https://user-images.githubusercontent.com/69070044/201520816-a7f518bc-536c-463f-a029-8fd01dcd57f2.png">
 
+- Site advert section: This section is beneath the profile of each nurse and it has an external link to the british cardiovascular society.
+
+<img width="1280" alt="bcs advert section" src="https://user-images.githubusercontent.com/69070044/202856828-bea3ee56-9294-4890-9a96-49e9250dd12d.png">
+
 - Nurse blog page
 
 <img width="762" alt="blogpage" src="https://user-images.githubusercontent.com/69070044/201520823-e09a9a39-5645-4efb-a343-de3cee281ef2.png">
@@ -150,6 +154,7 @@ UPDATE & DELETE:
 <img width="1280" alt="pep8" src="https://user-images.githubusercontent.com/69070044/201548367-2e0594f2-0554-43f1-bba2-dfb0ad264fd9.png">
 
 ### Lighthouse Testing
+<img width="1128" alt="lightgouse" src="https://user-images.githubusercontent.com/69070044/202856712-c93d08f3-0cb7-463f-a4bb-e8cd387cea8f.png">
 
 ### Python and JavaScript Testing
 All Custom Python & JavaScript code was manually tested multiple times during and after development. This is reflected in the fact that all of the user stories below are working and have produced no errors in the terminal or the console.
