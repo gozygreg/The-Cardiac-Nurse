@@ -56,27 +56,35 @@ As a visitor of the site:
 ## Design
 ### Wireframe
 - Home Page
+
 ![Home page (Alternate 899t)](https://user-images.githubusercontent.com/69070044/200598172-65bd1d71-965c-43df-bd26-48fdeca7273c.png)
 
 - Nurse Profile Page
+
 ![Our Nurse page](https://user-images.githubusercontent.com/69070044/200598318-b714ba7d-2432-4f5f-89c2-2879563d7d2a.png)
 
 - Nurse Profile Detail Page
+
 ![Nurse profile page](https://user-images.githubusercontent.com/69070044/200598243-37067813-6ee3-4a6b-bbed-e482a84bc87b.png)
 
 - Edit Profile Page
+
 ![Edit page](https://user-images.githubusercontent.com/69070044/200598421-25afcb4f-a894-4eef-a35d-bce2e8f896c9.png)
 
 - Blog Page
+
 ![Nurse blog page](https://user-images.githubusercontent.com/69070044/200598497-a1afe92a-b991-4cde-a537-c3a4ce109b1d.png)
 
 - Blog Detail Page
+
 ![blog detail page](https://user-images.githubusercontent.com/69070044/200598622-fc429b95-6efd-46f1-a59d-3a06197ef66d.png)
 
 - Signup/Register Page
+
 ![signup page](https://user-images.githubusercontent.com/69070044/200598614-e641d0b0-4fcd-4696-8aa3-32d94e79c105.png)
 
 - Logout Page
+
 ![Logout page](https://user-images.githubusercontent.com/69070044/200598656-0f8f6fed-26bd-4e8e-8382-f933071ffce6.png)
 
 ### Functional Structure
@@ -86,6 +94,7 @@ Three models were created to produce the required database structure.
 - Blog model: Contains all the information about the blog post such as title of blog post, authur, image, excerpt, likes, date updated and status of blog post (draft or published).
 - Comment model: Create the ability for loggin users to submit their thoughts or contributions to posts as well as the ability of site administrator to approve or disapprove any comments.
 - The blog and comment model was an inspiration from code institute django walkthrough project "I think therefore I blog".
+
 <img width="554" alt="Screenshot 2022-11-08 at 00 34 08" src="https://user-images.githubusercontent.com/69070044/200445609-b18d1ea8-1798-4e76-9db8-d2d9c9867700.png">
 
 
@@ -219,3 +228,5 @@ The site was deployed to Heroku. The steps used are as follows:
 
 ## Dedication
 - This project is dedicated to my wife and son who was born 2 weeks before the submission deadline. 
+
+[top of page](#table-of-contents)

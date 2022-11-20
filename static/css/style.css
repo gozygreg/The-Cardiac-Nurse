@@ -63,6 +63,10 @@ footer {
     background-color: black;
 }
 
+.home-button {
+    border: white;
+}
+
 /* NURSEPROFILE AND NURSEDETAIL.HTML PAGES */
 .card-body {
     color: black
@@ -76,8 +80,16 @@ footer {
     color: white;
 }
 
+.bcs-advert-small {
+    color: white;
+}
+
 .nursedetail {
     padding-bottom: 52px;
+}
+
+.detail-button {
+    margin: 3px;
 }
 
 .spotlight {
@@ -258,7 +270,7 @@ footer {
     }
 
     .home-button {
-        width: 50%;
+        width: 60%;
         font-size: 1em;
     }
 
