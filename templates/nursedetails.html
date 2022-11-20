@@ -32,7 +32,7 @@
 
                     {% if request.user == nurse.profile_creator %}
                     <hr class="adjust">
-                    <p>You created this profile, so you can edit or delete it by clicking the button below</p>
+                    <p>Click the button below to edit or delete your profile</p>
                     <button onclick="location.href='{% url 'editnurseprofile' nurse.slug %}'" type="button"
                         class="detail-button">EDIT</button>
                     <button onclick="location.href='{% url 'deleteprofile' nurse.slug %}'" type="button"
