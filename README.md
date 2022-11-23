@@ -27,7 +27,15 @@ The purpose of the cardiac nurse website is to bring together nurses with intres
 - Site visitors are able to read the various blog posts on the site.
 
 ## Agile
-The plan for this project was carried out using the Agile Methodology in Github. User Stories were created using [issues](https://github.com/gozygreg/The-Cardiac-Nurse/issues) on git hub. Each user story explicitly explains the purpose of the issues. Each story was assigned a classification of must-have, should-have, could-have or future-have.. It was prioritised using GitHub labels with different colors. See link to kanban board [here](https://github.com/users/gozygreg/projects/14/views/1)
+The plan for this project was carried out using the Agile Methodology in Github. Epics and User Stories were created using [issues](https://github.com/gozygreg/The-Cardiac-Nurse/issues) on git hub. Each user story explicitly explains the purpose of the issues. Each story was assigned a classification of must-have, should-have, could-have or future-have.. It was prioritised using GitHub labels with different colors. See link to kanban board [here](https://github.com/users/gozygreg/projects/14/views/1). Various tasks performed were also itemized using the agile methodology in Github.
+
+### Epics
+1. Nurse Profile
+2. Nurse Blog
+3. Sign in/out
+4. Messaging
+
+For simplicity in the readme documentation, I have categorized all user stories in to three below; Admin stories, Nurse stories and site visitors stories. However, visit my [epics](https://github.com/gozygreg/The-Cardiac-Nurse/issues) on git hub to see more of the agile methodology arrangement. I have created 4 Epics and 16 user stories and various tasks under each user stories.
 ### Admin stories
 As the site administrator (For Nurse Blog app):
 1. I can create, read, update and delete post so that I can manage the contents and flow of the site. **Story point: 3**
