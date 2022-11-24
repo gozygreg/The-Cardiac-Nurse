@@ -161,8 +161,8 @@ UPDATE & DELETE:
 
 ## Testing
 ### Validator Testing
-- All html files in the template directory were passed through the [W3C validator](https://validator.w3.org/) with no errors found other than those listed in reference to templating style syntax; {%%} and {{}} tags
-<img width="1280" alt="html validator" src="https://user-images.githubusercontent.com/69070044/201546606-9dd88c70-e147-4705-b0c9-a6ae6e2b7ac2.png">
+- All html files in the template directory were passed through the [W3C validator](https://validator.w3.org/) with no errors found 
+<img width="1280" alt="html val" src="https://user-images.githubusercontent.com/69070044/203661954-97bf1c00-c4b4-4c9c-9593-d50d069c6830.png">
 
 - CSS file has been passed through [Jigsaw validator](https://jigsaw.w3.org/css-validator) with no issues found
 <img width="1280" alt="css validator" src="https://user-images.githubusercontent.com/69070044/201546693-42ab2f73-a790-4475-946a-834a4a1500e6.png">

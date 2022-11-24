@@ -48,14 +48,44 @@
     <nav aria-label="Page navigation">
         <ul class="pagination justify-content-center">
             {% if page_obj.has_previous %}
-            <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo; PREV </a></li>
+            <li><a href="?page={{ page_obj.previous_page_number }}" class="detail-button">&laquo; PREV </a></li>
             {% endif %}
             {% if page_obj.has_next %}
-            <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"> NEXT &raquo;</a></li>
+            <li><a href="?page={{ page_obj.next_page_number }}" class="detail-button"> NEXT &raquo;</a></li>
 
             {% endif %}
         </ul>
     </nav>
     {% endif %}
+
+    <!-- ADVERT SECTION TO LINK USERS TO EXTERNAL WEBSITE-->
+    <div class="row bg-black">
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title text-center bcs-color"><b>British Cardiovascular Society (BCS)</b></h5>
+                    <p class="bcs-advert-small">As part of our commitment in supporting nurses
+                        with information, below
+                        is the link to BCS</p>
+                    <p class="bcs-advert">Founded in 1922, the British Cardiovascular Society (BCS)
+                        has evolved into a
+                        complex organisation that plays a pivotal role in the delivery of cardiovascular health across
+                        the UK. <br>They currently have around 3,000 members including the great majority (probably 90%)
+                        of UK
+                        consultant cardiologists. Specialist registrars, GPs with a special interest, <b>Nurses</b> and
+                        other professionals with an interest in cardiovascular medicine are also members.
+                        The Society became a UK Registered Charity in 2002. Registered Charity No: 1093321</p>
+                    <p class="card-text bcs-advert">Visit BCS website for latest news on heart health</p>
+                    <a rel="external" href="http://www.cardionewsuk.org/" target="_blank"
+                        class="mt-2 brand-text page-links btn btn-lg home-button"> BCS News
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 spotlight">
+            <div class="container">
+            </div>
+        </div>
+    </div>
 </div>
 {%endblock%}
