@@ -14,7 +14,7 @@ The Cardiac Nurse website is go-to platform for every nurse that specialise in a
     - [Epics](#epics)
     - [Acceptance Criteria](#nurse-stories-and-corresponding-acceptance-criteria)
 - [Design](#design)
-    - [Functional Structure](#functional-structure)
+    - [Wireframe](#wireframe)
     - [Database Structure](#database-structure)
     - [Features](#features)
     - [CRUD](#crud-fuctionality)
@@ -203,7 +203,7 @@ As a visitor of the site:
 
     ![Logout page](https://user-images.githubusercontent.com/69070044/200598656-0f8f6fed-26bd-4e8e-8382-f933071ffce6.png)
 
-- ### Functional Structure
+
 - ### Database Structure
     - Three models were created to produce the required database structure.
         - Nurse profile model: Contains all the information about a particular nurse in the database. This model has the name of the nurse and the creator of the profile, date  profile was created, image or picture on the profile, his or her specialty in nursing, his job description or career experience and status of the profile (published or not published).
@@ -211,6 +211,8 @@ As a visitor of the site:
         - Comment model: Create the ability for loggin users to submit their thoughts or contributions to posts as well as the ability of site administrator to approve or disapprove any comments. The blog and comment model was an inspiration from code institute django walkthrough project "I think therefore I blog".
 
         - <img width="554" alt="Screenshot 2022-11-08 at 00 34 08" src="https://user-images.githubusercontent.com/69070044/200445609-b18d1ea8-1798-4e76-9db8-d2d9c9867700.png">
+    - The flow chart of the website below:
+        - ![The Cardiac Nurse Flow chart](https://user-images.githubusercontent.com/69070044/204094866-1f058c6e-462f-461e-8c58-129e677d343a.png)
 
 
 - ### Features
