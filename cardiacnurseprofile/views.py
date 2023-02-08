@@ -6,6 +6,7 @@ from django.shortcuts import render, redirect, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from .models import NurseProfile
 from .forms import SubmitNurseProfile
 
@@ -20,6 +21,7 @@ class NursePage(generic.ListView):
     paginate_by = 6
 
 
+@login_required
 def submit_profile(request):
     """
     view for nurse profile submit page
@@ -44,6 +46,7 @@ def submit_profile(request):
     )
 
 
+@login_required
 def edit_profile(request, slug):
     """
     Edit a nurse profile
@@ -70,6 +73,7 @@ def edit_profile(request, slug):
     return render(request, 'editnurseprofile.html', context)
 
 
+@login_required
 def delete_profile(request, slug):
     """
     Delete a nurse profile
