@@ -5,6 +5,9 @@
     - [Python and Javascript Testing](#python-and-javascript-testing)
     - [Manuel Testing](#manuel-testing)
         - [User Story Testing](#user-story-testing)
+            - [Site Admin](#as-an-site-admin-i-can)
+            - [Registered User/Nurse](#as-a-registered-user--nurse-on-the-platform-i-can)
+            - [Unregistered User/Site Visitor](#as-a-site-visitor-or-unregistered-user-i-can)
 
 
 
@@ -36,7 +39,7 @@
 - ### Manuel Testing 
     Below is a summary of how I manually tested each user story. 
     - #### **User Story Testing**
-        *As an site admin I can...*
+        - ### *As an site admin I can...*
         | checked | create, read, update and delete post so that I can manage the contents and flow of the site |
         | ------- | ------------------------------------------------------------------------------------------- |
         |         | add "/admin" to the site url |
@@ -55,10 +58,11 @@
         |         | click on "add" button to add a new nurse profiles to the site |
         |         | click on "delete" button to remove an existing nurse profile |
 
-        *As a Registered user/nurse on the platform I can ...*
+        - ### *As a Registered user / nurse on the platform I can ...*
         | checked | create a user profile and write about my career journey as a cardiac nurse so that I can be found and viewed on the site. |
         | --- | ------------------------------------------------------------------------------------------- |
         | ✓ | Link to register or signup is in navigation menu |
+        | ✓ | "Join our platform" button is only visible to authenticated users/registered nurses that does not have a profile or have not joined the platform |
         | ✓ | "Join our platform" button is present in our "nurses page" |
         | ✓ | clicking on "Join our platform" button navigates registered user/nurse to form |
         | ✓ | registered user/nurse is able to fill form |
@@ -80,7 +84,9 @@
         | ✓ | A message is displayed that my comment is awaiting approval by site admin after my form is validated and  I click the submit button |
         | ✓ | I am able to view all the comment other registered user have left about a post |
 
-        *As a site visitor or unregistered user I can...*
+        Note: Authenticated user/Registered nurse that do not have a profile is able to join the platform. The "Join the platform" button is only visible to authenticated users who have not already joined the platform or set up their profile. This button is hidden for unauthenticated user and authenticated user who already have a profile or joined the platform 
+
+        - ### *As a site visitor or unregistered user I can...*
         | checked | view any nurse profile so that see their career journey. |
         | ------- | ------------------------------------------------------------------------------------------- |
         | ✓ | "Meet our nurses" button is present on the homepage |
@@ -103,5 +109,4 @@
         | ✓ | Signup button is present below the form | 
         | ✓ | Message to await verification is seen once form is filled  and signup button is clicked|
 
-        pagination
        

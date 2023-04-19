@@ -7,7 +7,7 @@
 <!-- JOIN PLATFORM -->
 <div class="col-12 bg-light">
     <div class="row h-100 d-flex align-items-center justify-content-center">
-        {% if user.is_authenticated %}
+        {% if user.is_authenticated and not user.nurse_profile.exists %}
         <div class="col-sm-6">
             <div class="card mb-4">
                 <div class="card-body text-center">
