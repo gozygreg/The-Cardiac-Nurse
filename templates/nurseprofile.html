@@ -5,39 +5,29 @@
 {% block content %}
 
 <!-- JOIN PLATFORM -->
-<div class="col-12 bg-light">
-    <div class="row h-100 d-flex align-items-center justify-content-center">
-        {% if user.is_authenticated and not user.nurse_profile.exists %}
-        <div class="col-sm-6">
-            <div class="card mb-4">
-                <div class="card-body text-center">
-                    <h2>Are you a nurse with interest in cardiovascular nursing?</h2>
-                    <hr />
-                    <p>If you work in cardiac setting in any capacity, from CCU to CNS, from Cath Lab to NP, then this
-                        platform is for you.</p>
-                    <br>
-                    <button onclick="location.href='{% url 'submitprofile' %}'" type="button" class="glow-on-hover">Join
-                        our platform</button>
-                </div>
-            </div>
+{% if user.is_authenticated and not user.nurse_profile.exists %}
+<div class="col-sm-6 mx-auto mb-4">
+    <div class="card">
+        <div class="card-body text-center">
+            <h2 class="card-title">Are you a nurse with interest in cardiovascular nursing?</h2>
+            <hr>
+            <p class="card-text">If you work in cardiac setting in any capacity, from CCU to CNS, from Cath Lab to NP,
+                then this platform is for you.</p>
+            <button onclick="location.href='{% url 'submitprofile' %}'" type="button" class="glow-on-hover">Join
+                our platform</button>
         </div>
-        {% endif %}
     </div>
+    {% endif %}
 
-    <div class="row">
-        <!-- VERIFY NURSE/USER NEW TO PLATFORM -->
+    <!-- NURSES LIST -->
+    <div class="row mt-4">
         {% for nurse in nurseprofile_list %}
-        <div class="col-md-4">
-            <div class="card mb-4">
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img class="card-img-top" src="{{ nurse.nurse_image.url }}" alt="{{ nurse.nurse_name }}">
                 <div class="card-body">
-                    <div class="image-container">
-                        <img class="card-img-top" src="{{ nurse.nurse_image.url }}" alt="{{ nurse.nurse_name }}">
-                        <div class="image-flash">
-                            <a href="{% url 'nursedetails' nurse.slug %}" class="nurse-link">
-                                <p>RN: {{ nurse.nurse_name }}</p>
-                            </a>
-                        </div>
-                    </div>
+                    <h5 class="card-title"><a href="{% url 'nursedetails' nurse.slug %}"
+                            class="text-dark">{{ nurse.nurse_name }}</a></h5>
                 </div>
             </div>
         </div>
@@ -48,21 +38,20 @@
         {% endfor %}
     </div>
 
-    <br>
-
-    <div class="d-flex justify-content-center">
-        {% if is_paginated %}
-        <div>
+    <!-- PAGINATION -->
+    {% if is_paginated %}
+    <div class="row mt-4">
+        <div class="col-12 d-flex justify-content-center">
             {% if page_obj.has_previous %}
             <button onclick="location.href='?page={{ page_obj.previous_page_number }}'" type="button"
-                class="pagination-button mb-4">PREV</button>
+                class="pagination-button mr-2">PREV</button>
             {% endif %}
             {% if page_obj.has_next %}
             <button onclick="location.href='?page={{ page_obj.next_page_number }}'" type="button"
-                class="pagination-button mb-4">NEXT</button>
+                class="pagination-button">NEXT</button>
             {% endif %}
         </div>
-        {% endif %}
     </div>
-</div>
-{% endblock content %}
+    {% endif %}
+
+    {% endblock content %}
