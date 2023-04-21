@@ -42,21 +42,21 @@
         - ### *As an site admin I can...*
         | checked | create, read, update and delete post so that I can manage the contents and flow of the site |
         | ------- | ------------------------------------------------------------------------------------------- |
-        |         | add "/admin" to the site url |
-        |         | log on to admin panel        |
-        |         | create blog post             |
-        |         | read blog post               |
-        |         | update blog post             |
-        |         | delete blog post             |
+        | ✓ | add "/admin" to the site url |
+        | ✓ | log on to admin panel        |
+        | ✓ | create blog post             |
+        | ✓ | read blog post               |
+        | ✓ | update blog post             |
+        | ✓ | delete blog post             |
         | checked | create draft posts so that I can finish writing the content later |
-        |         | create draft post to complete later |
+        | ✓ | create draft post to complete later |
         | checked | approve or disapprove comments so that prevent sharing inappropriate/offensive comments. |
-        |         | click on "approve" button to approve comments or leave it unapproved |
+        | ✓ | click on "approve" button to approve comments or leave it unapproved |
         | checked | verify and accept new nurses that what to join the platform so that they can be viewed by site visitors. |
-        |         | click "action" and then choose "verify nurse" option |
+        | ✓ | click "action" and then choose "verify nurse" option |
         | checked | add a new nurse profile, update or delete an existing nurse profile so that i can manage the content and flow of nurses in the site. |
-        |         | click on "add" button to add a new nurse profiles to the site |
-        |         | click on "delete" button to remove an existing nurse profile |
+        | ✓ | click on "add" button to add a new nurse profiles to the site |
+        | ✓ | click on "delete" button to remove an existing nurse profile |
 
         - ### *As a Registered user / nurse on the platform I can ...*
         | checked | create a user profile and write about my career journey as a cardiac nurse so that I can be found and viewed on the site. |
@@ -108,5 +108,7 @@
         | ✓ | When you click on the link, you are able to navigate to the signup form. |
         | ✓ | Signup button is present below the form | 
         | ✓ | Message to await verification is seen once form is filled  and signup button is clicked|
+
+[back to readme](./README.md)
 
        

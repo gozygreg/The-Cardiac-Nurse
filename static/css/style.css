@@ -35,6 +35,10 @@ a {
     background-color: #445261;
 }
 
+.welcome {
+    background-color: #0693e3 !important;
+}
+
 footer {
     position: absolute;
     bottom: 0;

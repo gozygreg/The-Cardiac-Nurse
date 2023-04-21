@@ -52,11 +52,10 @@ def edit_profile(request, slug):
     Edit a nurse profile
     """
     profile = get_object_or_404(NurseProfile, slug=slug)
-    form_edit = SubmitNurseProfile(request.POST or None, instance=profile)
-    context = {
-        'form_edit': form_edit,
-        'profile': profile
-    }
+
+    # Check if the logged-in user is the owner of the profile
+    if profile.profile_creator != request.user:
+        return redirect('nurse_profile')
 
     if request.method == 'POST':
         form_edit = SubmitNurseProfile(
@@ -70,8 +69,22 @@ def edit_profile(request, slug):
     else:
         form_edit = SubmitNurseProfile(instance=profile)
 
+    context = {
+        'form_edit': form_edit,
+        'profile': profile
+    }
+
     return render(request, 'editnurseprofile.html', context)
 
+
+# @login_required
+# def delete_profile(request, slug):
+#     """
+#     Delete a nurse profile
+#     """
+#     profile = get_object_or_404(NurseProfile, slug=slug)
+#     profile.delete()
+#     return redirect('nurse_profile')
 
 @login_required
 def delete_profile(request, slug):
@@ -79,6 +92,11 @@ def delete_profile(request, slug):
     Delete a nurse profile
     """
     profile = get_object_or_404(NurseProfile, slug=slug)
+
+    # Check if the logged-in user is the owner of the profile
+    if profile.profile_creator != request.user:
+        return redirect('nurse_profile')
+
     profile.delete()
     return redirect('nurse_profile')
 
