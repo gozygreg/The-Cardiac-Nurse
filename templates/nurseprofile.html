@@ -51,7 +51,6 @@
 
         <!-- PAGINATION -->
         {% if is_paginated %}
-        <br>
         <div class="row mt-4 mb-4">
             <div class="col-12 d-flex justify-content-center">
                 {% if page_obj.has_previous %}
@@ -64,6 +63,7 @@
                 {% endif %}
             </div>
         </div>
+        <br>
     </div>
     {% endif %}
 

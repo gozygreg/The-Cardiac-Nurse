@@ -6,6 +6,12 @@ body {
     position: relative;
     min-height: 100vh;
     padding-bottom: 58px;
+    max-width: 100%;
+}
+
+.brand {
+    font-family: 'Montserrat';
+    font-size: 30px;
 }
 
 #nav-line {
@@ -39,10 +45,16 @@ a {
     background-color: #0693e3 !important;
 }
 
+.naver {
+    height: 80px;
+    font-size: 18px;
+}
+
 footer {
     position: absolute;
     bottom: 0;
     width: 100%;
+    height: 80px;
     padding: 20px;
     background-color: #0693e3;
 }
@@ -275,12 +287,20 @@ footer {
     .adjust {
         padding-top: 50px;
     }
+
+    body {
+        max-width: 100%;
+    }
 }
 
 /* MEDIUM SCREENS: LAPTOPS AND TABLETS */
 @media screen and (max-width:950px) {
     .bcs-advert {
         display: none;
+    }
+
+    body {
+        max-width: 100%;
     }
 }
 
@@ -298,5 +318,9 @@ footer {
     .spotlight {
         background-position: -100px;
         background-size: cover;
+    }
+
+    body {
+        max-width: 100%;
     }
 }
