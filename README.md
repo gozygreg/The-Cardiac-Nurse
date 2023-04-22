@@ -203,14 +203,13 @@ As a visitor of the site:
 
 - ### Database Structure
     - Three models were created to produce the required database structure.
-        - Nurse profile model: Contains all the information about a particular nurse in the database. This model has the name of the nurse and the creator of the profile, date  profile was created, image or picture on the profile, his or her specialty in nursing, his job description or career experience and status of the profile (published or not published).
-        - Blog model: Contains all the information about the blog post such as title of blog post, authur, image, excerpt, likes, date updated and status of blog post (draft or published).
-        - Comment model: Create the ability for loggin users to submit their thoughts or contributions to posts as well as the ability of site administrator to approve or disapprove any comments. The blog and comment model was an inspiration from code institute django walkthrough project "I think therefore I blog".
-
-        - <img width="554" alt="Screenshot 2022-11-08 at 00 34 08" src="https://user-images.githubusercontent.com/69070044/200445609-b18d1ea8-1798-4e76-9db8-d2d9c9867700.png">
+        - NurseBlog model: represents the database for submitting a blog post. It has several fields, including "title", "slug", "author", "featured_image", "excerpt", "updated_on", "content", "created_on", "status", and "likes". The "author" field is a foreign key that links to the "User" model, which is part of Django's built-in authentication system. The "likes" field is a ManyToManyField that links to the "User" model as well, allowing multiple users to like a single blog post.
+        - Comment model: represents the database models for creating comments for the "NurseBlog". It has fields for the "post" it is commenting on, the "name" and "email" of the comment author, the "body" of the comment, the "created_on" date, and whether the comment has been "approved" or not. The "post" field is a foreign key that links to the "NurseBlog" model. The blog and comment model was an inspiration from code institute django walkthrough project "I think therefore I blog".
+        - Nurse profile model: represents the database model for a nurse's profile page. It has several fields, including "specialty", "nurse_name", "slug", "description", "nurse_image", "status", "created_on", and "profile_creator". The "profile_creator" field is a foreign key that links to the "User" model. It also has a "get_absolute_url" method that returns the URL for the nurse's profile page and a "save" method that generates a slug for the nurse's name if one is not already provided. The "ordering" Meta option is set to "-created_on" so that the most recently created nurse profiles are displayed first.
+        - The entitiy relationship diagram drawn using drawsql app and can be found in this [link](https://drawsql.app/teams/greg-7/diagrams/the-cardiac-nurse)
+        - <img width="1018" alt="thecardiacnurseERD" src="https://user-images.githubusercontent.com/69070044/233803286-4c3f8659-c6bc-4aac-9f9f-a529abe5d72b.png">
     - The flow chart of the website below:
         - ![The Cardiac Nurse Flow chart](https://user-images.githubusercontent.com/69070044/204094866-1f058c6e-462f-461e-8c58-129e677d343a.png)
-
 
 - ### Features
     - Home page
