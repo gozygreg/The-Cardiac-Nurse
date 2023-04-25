@@ -35,9 +35,9 @@
             {% for nurse in nurseprofile_list %}
             <div class="col-md-6 col-md-4 mb-4">
                 <div class="card">
-                    <img class="card-img-top-list" src="{{ nurse.nurse_image.url }}" alt="{{ nurse.nurse_name }}">
+                    <img src="{{ nurse.nurse_image.url }}" alt="{{ nurse.nurse_name }}">
                     <div class="card-body">
-                        <h5 class="card-title"><a href="{% url 'nursedetails' nurse.slug %}"
+                        <h5 class="card-title text-center"><a href="{% url 'nursedetails' nurse.slug %}"
                                 class="text-dark">{{ nurse.nurse_name }}</a></h5>
                     </div>
                 </div>
