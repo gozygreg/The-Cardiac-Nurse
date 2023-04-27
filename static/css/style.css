@@ -309,3 +309,24 @@ footer {
 
 
 }
+
+/* SMALLER MOBILE DEVICES */
+@media screen and (max-width:280px) {
+    .brand {
+        font-size: 20px;
+    }
+
+    .home-button {
+        width: 100%;
+    }
+
+    .pagination-button {
+        width: 35%;
+        height: 100%;
+        font-size: 75%;
+    }
+
+    body {
+        font-size: small;
+    }
+}

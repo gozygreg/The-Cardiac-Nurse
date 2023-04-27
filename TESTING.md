@@ -28,7 +28,25 @@
     <img width="1280" alt="pep8" src="https://user-images.githubusercontent.com/69070044/201548367-2e0594f2-0554-43f1-bba2-dfb0ad264fd9.png">
 
 - ### Lighthouse Testing
-    - <img width="1128" alt="lightgouse" src="https://user-images.githubusercontent.com/69070044/202856712-c93d08f3-0cb7-463f-a4bb-e8cd387cea8f.png">
+    - Home page <br>
+        - <img width="1000" alt="lightgouse" src="https://user-images.githubusercontent.com/69070044/202856712-c93d08f3-0cb7-463f-a4bb-e8cd387cea8f.png">
+    - Blog list page (Mobile view) <br>
+        - <img width="500" alt="LH bloglistpage MV" src="https://user-images.githubusercontent.com/69070044/234424046-89d5a8ab-c791-4cd2-8e70-4944abae8284.png">
+     - Blog list page (Desktop view) <br>
+        - <img width="500" alt="LH bloglist DV" src="https://user-images.githubusercontent.com/69070044/234426332-496aa0d1-54e6-4cd0-b810-58593275104c.png">
+    - Blog detail page (Mobile view) <br>
+        - 
+    - Blog detail page (Desktop view) <br>
+        - 
+    - Profile list page (Mobile view) <br>
+        - 
+    - Profile list page (Desktop view) <br>
+        - <img width="500" alt="LH profilelistpage DV" src="https://user-images.githubusercontent.com/69070044/234425656-256e3bcf-6bc0-4923-bfff-383118a5a4f1.png">
+    - Profile detail page (Mobile view) <br>
+        - 
+    - Profile detail page (Destop view) <br>
+        - <img width="500" alt="LH profiledetail DV" src="https://user-images.githubusercontent.com/69070044/234425790-9e4348df-943a-4741-81e9-f28595cdf106.png">
+
 
 - ### Python and JavaScript Testing
     - All Custom Python & JavaScript code was manually tested multiple times during and after development. This is reflected in the fact that all of the user stories below are working and have produced no errors in the terminal or the console.

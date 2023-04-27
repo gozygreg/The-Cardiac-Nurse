@@ -77,15 +77,6 @@ def edit_profile(request, slug):
     return render(request, 'editnurseprofile.html', context)
 
 
-# @login_required
-# def delete_profile(request, slug):
-#     """
-#     Delete a nurse profile
-#     """
-#     profile = get_object_or_404(NurseProfile, slug=slug)
-#     profile.delete()
-#     return redirect('nurse_profile')
-
 @login_required
 def delete_profile(request, slug):
     """
