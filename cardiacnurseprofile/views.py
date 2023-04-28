@@ -55,6 +55,8 @@ def edit_profile(request, slug):
 
     # Check if the logged-in user is the owner of the profile
     if profile.profile_creator != request.user:
+        messages.success(
+                request, "You can only edit a profile that belongs to you")
         return redirect('nurse_profile')
 
     if request.method == 'POST':
@@ -86,6 +88,8 @@ def delete_profile(request, slug):
 
     # Check if the logged-in user is the owner of the profile
     if profile.profile_creator != request.user:
+        messages.success(
+                request, "You can only delete a profile that belongs to you")
         return redirect('nurse_profile')
 
     profile.delete()
