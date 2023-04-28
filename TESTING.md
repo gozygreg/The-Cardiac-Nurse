@@ -3,7 +3,7 @@
     - [Validator Testing](#validator-testing)
     - [Lighthouse](#lighthouse-testing)
     - [Python and Javascript Testing](#python-and-javascript-testing)
-    - [Manuel Testing](#manuel-testing)
+    - [Manual Testing](#manuel-testing)
         - [User Story Testing](#user-story-testing)
             - [Site Admin](#as-an-site-admin-i-can)
             - [Registered User/Nurse](#as-a-registered-user--nurse-on-the-platform-i-can)
@@ -64,7 +64,7 @@
 
     - Site checked and is working in various browsers such as Chrome and Safari
 
-- ### Manuel Testing 
+- ### Manual Testing 
     Below is a summary of how I manually tested each user story. 
     - #### **User Story Testing**
         - ### *As an site admin I can...*
