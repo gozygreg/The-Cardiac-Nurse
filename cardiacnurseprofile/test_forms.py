@@ -5,7 +5,6 @@ from django.test import TestCase
 from .forms import SubmitNurseProfile
 
 
-# Test derived from "Hello Django" walkthrough project.
 class TestSubmitNurseProfile(TestCase):
     """
     Tests for Submit Nurse Profile Form

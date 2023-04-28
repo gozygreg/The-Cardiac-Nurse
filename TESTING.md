@@ -129,32 +129,53 @@
         | ✓ | Message to await verification is seen once form is filled  and signup button is clicked|
 
 - ### Automatic Testing
-    - After testing all the user stories manually, I went further to attempt automatic testing. 
+    - After testing all the user stories manually, I went further to run just two automatic test due to time contrains. 
     <hr>
-    class HomePageTest(TestCase): 
-
-        def setUp(self): 
-            self.client = Client()
-
-        def test_home_page(self):
-            response = self.client.get(reverse('home_page'))
-            self.assertEqual(response.status_code, 200)
-            self.assertTemplateUsed(response, 'index.html') 
+    - <img width="500" alt="Screenshot 2023-04-28 at 07 39 22" src="https://user-images.githubusercontent.com/69070044/235073405-d70a930c-2d7f-4b07-be47-f4b51926c200.png">
     <hr>
+    1. 
+        <hr>
 
-    - This test sets up a test client, makes a GET request to the home_page view using the reverse function to get the URL, and then checks that the response status code is 200 and that the response uses the index.html template.
+            class TestSubmitNurseProfile(TestCase):
+                """
+                Tests for Submit Nurse Profile Form
+                """
+                def test_nurse_name_required(self):
+                    """
+                    Verify nurse name is required
+                    """
+                    form = SubmitNurseProfile({'nurse_name': ''})
+                    self.assertFalse(form.is_valid())
+                    self.assertIn('nurse_name', form.errors.keys())
+                    self.assertEqual(
+                        form.errors['nurse_name'][0], 'This field is required.')
 
-    - However, was an error when running the command "python manage.py test". The error message indicates that there is a permission issue with creating a test database. The error also mentions that Django is unable to connect to the 'postgres' database and will use the first PostgreSQL database instead.
+        <hr>
 
-    - Due to lack of time and the amount time it will take to do automatic testing for all the code I have already written, I am unable to resolve this issue at this time. For this reason, I focus on doing an extensive manual testing as seen above.
+        - This is a test class named "TestSubmitNurseProfile" that inherits from Django's "TestCase" class. It contains a test method named "test_nurse_name_required" that checks if the "nurse_name" field in the "SubmitNurseProfile" form is required.
+        - In the "test_nurse_name_required" method, a new form object is created with an empty "nurse_name" field. The test then checks if the form is not valid and if the "nurse_name" field is in the form's errors. It then checks if the error message for the "nurse_name" field is "This field is required."
+        - This test ensures that the "nurse_name" field is properly validated and that the form requires a value for this field. If the test fails, it means that the form is not properly validating the "nurse_name" field.
 
-    - I however, intend to solve this problem and go ahead in doing the automatic test. Below are troubleshooting steps, I would try in rosolving the problem.
-        1. check the permissions of the database
-        2. verify that the PostgreSQL database server is properly configured
-        3. ensure that the necessary dependencies are installed
-        4. try running the command with elevated privileges, such as by using the sudo command.
-        5. seek help from online community or support forum related to Django and database management.
-    
+    2. 
+        <hr>
+
+            class TestViews(TestCase):
+            """
+            Test views
+            """
+            def test_nurse_profile_page(self):
+                """
+                verify nurse profile page loads
+                """
+                url = reverse('nurse_profile')
+                response = self.client.get(url)
+                self.assertEqual(response.status_code, 200)
+                self.assertTemplateUsed(response, 'nurseprofile.html')
+
+        <hr>
+
+        - This is a test case for testing the behavior of a Django view called nurse_profile. The test verifies that when the user visits the URL associated with this view, the page loads successfully and the correct template (nurseprofile.html) is used to render the page.
+        - The test uses the Django TestCase class and the Client class to simulate a GET request to the URL associated with the nurse_profile view. The reverse function is used to generate the URL for the view based on its name. The response object returned by the view is then checked to ensure that the status code is 200 (OK) and that the correct template is used to render the response.
 
 [back to readme](./README.md)
 

@@ -1,10 +1,10 @@
 """
 Tests for Views
 """
-from django.test import TestCase
+from django.test import TestCase, Client
+from django.urls import reverse
 
 
-# Test taken from "Hello Django" walkthrough project
 class TestViews(TestCase):
     """
     Test views
@@ -13,6 +13,7 @@ class TestViews(TestCase):
         """
         verify nurse profile page loads
         """
-        response = self.client.get('/nurseprofile', follow=True)
+        url = reverse('nurse_profile')
+        response = self.client.get(url)
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'nurseprofile.html')
