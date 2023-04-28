@@ -31,27 +31,30 @@
     - Home page <br>
         - <img width="1000" alt="lightgouse" src="https://user-images.githubusercontent.com/69070044/202856712-c93d08f3-0cb7-463f-a4bb-e8cd387cea8f.png">
     - Blog list page (Mobile view) <br>
-        - <img width="500" alt="LH bloglistpage MV" src="https://user-images.githubusercontent.com/69070044/234424046-89d5a8ab-c791-4cd2-8e70-4944abae8284.png">
+        - <img width="571" alt="LH bloglist MV" src="https://user-images.githubusercontent.com/69070044/235110079-4f40c879-1cce-426d-82ce-168b2b1a11ee.png">
      - Blog list page (Desktop view) <br>
         - <img width="500" alt="LH bloglist DV" src="https://user-images.githubusercontent.com/69070044/234426332-496aa0d1-54e6-4cd0-b810-58593275104c.png">
     - Blog detail page (Mobile view) <br>
-        - <img width="500" alt="LH blog detail MV" src="https://user-images.githubusercontent.com/69070044/235075131-77c0190e-b124-44b5-bed7-d3e70ed5772c.png">
+        - <img width="500" alt="LH bloglist detail" src="https://user-images.githubusercontent.com/69070044/235110089-39838217-c6f2-4fd7-a8a2-fe9efae18513.png">
     - Blog detail page (Desktop view) <br>
         - <img width="500" alt="LH blogdetail DV" src="https://user-images.githubusercontent.com/69070044/235075006-45d6aeca-ae19-40b6-a831-31c66af046bb.png">
     - Profile list page (Mobile view) <br>
-        - <img width="500" alt="LH profile list MV" src="https://user-images.githubusercontent.com/69070044/235076401-6d5eac67-ec19-49dc-8de4-d7ad73371199.png">
+        - <img width="577" alt="LH Profile list MV" src="https://user-images.githubusercontent.com/69070044/235111377-9f86e222-cac7-4209-bc1c-4e995ee704b6.png">
     - Profile list page (Desktop view) <br>
         - <img width="500" alt="LH profilelistpage DV" src="https://user-images.githubusercontent.com/69070044/234425656-256e3bcf-6bc0-4923-bfff-383118a5a4f1.png">
     - Profile detail page (Mobile view) <br>
-        - <img width="500" alt="LH profile detail MV" src="https://user-images.githubusercontent.com/69070044/235075989-0fbfee38-3f42-4703-8625-17d7aaee6449.png">
+        - <img width="599" alt="LH Profile detail MV" src="https://user-images.githubusercontent.com/69070044/235111388-f15f54f7-b536-448b-8c33-c17d76b749e8.png">
     - Profile detail page (Destop view) <br>
         - <img width="500" alt="LH profiledetail DV" src="https://user-images.githubusercontent.com/69070044/234425790-9e4348df-943a-4741-81e9-f28595cdf106.png">
 
-### Lighthouse analysis and improvements
-    - All pages were run through lighthouse check site performance, accessibility, best practices and SEO. 
-    - All the pages came back with a score of 90 and above for desktop screens.
-    - On mobile screens only profile detail page, profile list page and blog detail pages came back with a score of less than 90 in performace. I intend to continue work on the project to improve this score to atleast 90.
-    - However, on mobile screens, site assessibility, best practices and SEO however came back with a score of over 90. 
+
+    - ### Lighthouse analysis and improvements:
+        - All pages were run through lighthouse check site performance, accessibility, best practices and SEO. 
+        - All the pages came back with a score of 90 and above for desktop screens.
+        - Initially mobile screens for profile detail page, profile list page and blog detail pages came back with a score of less than 90 in performace. I improved the score by;
+            - optimizing the images
+            - the use of CDN to reduce the load on the server and improve the delivery speed of site contents.
+            - using responsive design technique
 
 
 - ### Python and JavaScript Testing
