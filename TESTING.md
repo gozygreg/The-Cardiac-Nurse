@@ -8,16 +8,12 @@
             - [Site Admin](#as-an-site-admin-i-can)
             - [Registered User/Nurse](#as-a-registered-user--nurse-on-the-platform-i-can)
             - [Unregistered User/Site Visitor](#as-a-site-visitor-or-unregistered-user-i-can)
+    - [Authorizaton and Authentication Testting](#authorizaton-and-authentication-testting)
     - [Automatic Testing](#automatic-testing)
 
 
-
-
-
-
-
-## Testing
-- ### Validator Testing
+# Testing
+- ## Validator Testing
     - All html files in the template directory were passed through the [W3C validator](https://validator.w3.org/) with no errors found 
     <img width="1280" alt="html val" src="https://user-images.githubusercontent.com/69070044/203661954-97bf1c00-c4b4-4c9c-9593-d50d069c6830.png">
 
@@ -27,7 +23,7 @@
     - All python code was subjected to [PEP8 Online](https://www.pythonchecker.com/) with no significant issues other than some line of code being longer than 79 characters and the need to add two lines in front of a function definition.
     <img width="1280" alt="pep8" src="https://user-images.githubusercontent.com/69070044/201548367-2e0594f2-0554-43f1-bba2-dfb0ad264fd9.png">
 
-- ### Lighthouse Testing
+- ## Lighthouse Testing
     - Home page <br>
         - <img width="1000" alt="lightgouse" src="https://user-images.githubusercontent.com/69070044/202856712-c93d08f3-0cb7-463f-a4bb-e8cd387cea8f.png">
     - Blog list page (Mobile view) <br>
@@ -48,7 +44,7 @@
         - <img width="500" alt="LH profiledetail DV" src="https://user-images.githubusercontent.com/69070044/234425790-9e4348df-943a-4741-81e9-f28595cdf106.png">
 
 
-    - ### Lighthouse analysis and improvements:
+    - ## Lighthouse analysis and improvements:
         - All pages were run through lighthouse check site performance, accessibility, best practices and SEO. 
         - All the pages came back with a score of 90 and above for desktop screens.
         - Initially mobile screens for profile detail page, profile list page and blog detail pages came back with a score of less than 90 in performace. I improved the score by;
@@ -57,14 +53,14 @@
             - using responsive design technique
 
 
-- ### Python and JavaScript Testing
+- ## Python and JavaScript Testing
     - All Custom Python & JavaScript code was manually tested multiple times during and after development. This is reflected in the fact that all of the user stories below are working and have produced no errors in the terminal or the console.
 
     - All social links are working and open to external pages
 
     - Site checked and is working in various browsers such as Chrome and Safari
 
-- ### Manual Testing 
+- ## Manual Testing 
     Below is a summary of how I manually tested each user story. 
     - #### **User Story Testing**
         - ### *As an site admin I can...*
@@ -86,7 +82,7 @@
         | ✓ | click on "add" button to add a new nurse profiles to the site |
         | ✓ | click on "delete" button to remove an existing nurse profile |
 
-        - ### *As a Registered user / nurse on the platform I can ...*
+        - ## *As a Registered user / nurse on the platform I can ...*
         | checked | create a user profile and write about my career journey as a cardiac nurse so that I can be found and viewed on the site. |
         | --- | ------------------------------------------------------------------------------------------- |
         | ✓ | Link to register or signup is in navigation menu |
@@ -112,9 +108,7 @@
         | ✓ | A message is displayed that my comment is awaiting approval by site admin after my form is validated and  I click the submit button |
         | ✓ | I am able to view all the comment other registered user have left about a post |
 
-        Note: Authenticated user/Registered nurse that do not have a profile is able to join the platform. The "Join the platform" button is only visible to authenticated users who have not already joined the platform or set up their profile. This button is hidden for unauthenticated user and authenticated user who already have a profile or joined the platform 
-
-        - ### *As a site visitor or unregistered user I can...*
+        - ## *As a site visitor or unregistered user I can...*
         | checked | view any nurse profile so that see their career journey. |
         | ------- | ------------------------------------------------------------------------------------------- |
         | ✓ | "Meet our nurses" button is present on the homepage |
@@ -137,11 +131,24 @@
         | ✓ | Signup button is present below the form | 
         | ✓ | Message to await verification is seen once form is filled  and signup button is clicked|
 
-- ### Automatic Testing
+- ## Authorizaton and Authentication Testting
+    - If an authenticated user attempts to directly access a profile that does not belong to them by typing its address on the URL, they will be unable to delete or edit it.
+    - A message box appears to show this.
+    - User are then redirected to nurse profile list page
+        - <img width="1000" alt="message-edit" src="https://user-images.githubusercontent.com/69070044/235131152-f605e17e-b3c8-420c-bbff-7ed7e86b4bb9.png">
+        - <img width="1000" alt="message-delete" src="https://user-images.githubusercontent.com/69070044/235131161-1d21ce94-c510-4e5a-822b-760a76b18547.png">
+
+    - Also, Non-logged in users cannot delete or edit profiles on the site via URLs. They are will be redirected to signup page.
+        - <img width="500" alt="signup page" src="https://user-images.githubusercontent.com/69070044/235146462-a9465d49-bf03-4cf9-8b32-d1e5b556542b.png">
+
+    - Take note: Authenticated users who are registered nurses but do not have a profile can join the platform. The "Join the platform" button will only be visible to authenticated users who have not yet joined the platform or set up their profile. Unauthenticated users and authenticated users who already have a profile or have joined the platform will not see this button as it is hidden.
+        - <img width="1000" alt="Join our platform button" src="https://user-images.githubusercontent.com/69070044/235149178-d9212b4a-ab7a-4986-ba90-5e10eeaa43a3.png">
+
+
+- ## Automatic Testing
     - After testing all the user stories manually, I went further to run just two automatic test due to time contrains. 
-    <hr>
-    - <img width="500" alt="Screenshot 2023-04-28 at 07 39 22" src="https://user-images.githubusercontent.com/69070044/235073405-d70a930c-2d7f-4b07-be47-f4b51926c200.png">
-    <hr>
+        - <img width="500" alt="Screenshot 2023-04-28 at 07 39 22" src="https://user-images.githubusercontent.com/69070044/235073405-d70a930c-2d7f-4b07-be47-f4b51926c200.png">
+    
     1. 
         <hr>
 
@@ -158,7 +165,6 @@
                     self.assertIn('nurse_name', form.errors.keys())
                     self.assertEqual(
                         form.errors['nurse_name'][0], 'This field is required.')
-
         <hr>
 
         - This is a test class named "TestSubmitNurseProfile" that inherits from Django's "TestCase" class. It contains a test method named "test_nurse_name_required" that checks if the "nurse_name" field in the "SubmitNurseProfile" form is required.
@@ -172,14 +178,14 @@
             """
             Test views
             """
-            def test_nurse_profile_page(self):
-                """
-                verify nurse profile page loads
-                """
-                url = reverse('nurse_profile')
-                response = self.client.get(url)
-                self.assertEqual(response.status_code, 200)
-                self.assertTemplateUsed(response, 'nurseprofile.html')
+                def test_nurse_profile_page(self):
+                    """
+                    verify nurse profile page loads
+                    """
+                    url = reverse('nurse_profile')
+                    response = self.client.get(url)
+                    self.assertEqual(response.status_code, 200)
+                    self.assertTemplateUsed(response, 'nurseprofile.html')
 
         <hr>
 

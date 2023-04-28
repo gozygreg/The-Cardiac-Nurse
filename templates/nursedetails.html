@@ -35,8 +35,9 @@
                     <p>Click the button below to edit or delete your profile</p>
                     <button onclick="location.href='{% url 'editnurseprofile' nurse.slug %}'" type="button"
                         class="detail-button">EDIT</button>
-                    <button onclick="location.href='{% url 'deleteprofile' nurse.slug %}'" type="button"
-                        class="detail-button">DELETE</button>
+                    <!-- <button onclick="location.href='{% url 'deleteprofile' nurse.slug %}'" type="button"
+                        class="detail-button">DELETE</button> -->
+                    <button onclick="confirmDelete()" type="button" class="detail-button">DELETE</button>
                     {% endif %}
                 </div>
             </div>
@@ -71,6 +72,14 @@
         <div class="container">
         </div>
     </div>
+
+    <script>
+        function confirmDelete() {
+            if (confirm("Are you sure you want to delete this profile?")) {
+                location.href = "{% url 'deleteprofile' nurse.slug %}";
+            }
+        }
+    </script>
 </div>
 
 {% endblock %}
