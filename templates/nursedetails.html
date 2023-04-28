@@ -37,7 +37,7 @@
                         class="detail-button">EDIT</button>
                     <!-- <button onclick="location.href='{% url 'deleteprofile' nurse.slug %}'" type="button"
                         class="detail-button">DELETE</button> -->
-                    <button onclick="confirmDelete()" type="button" class="detail-button">DELETE</button>
+                    <button id="deleteButton" type="button" class="detail-button">DELETE</button>
                     {% endif %}
                 </div>
             </div>
@@ -74,11 +74,11 @@
     </div>
 
     <script>
-        function confirmDelete() {
+        document.getElementById('deleteButton').addEventListener('click', function () {
             if (confirm("Are you sure you want to delete this profile?")) {
                 location.href = "{% url 'deleteprofile' nurse.slug %}";
             }
-        }
+        });
     </script>
 </div>
 

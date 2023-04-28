@@ -8,7 +8,7 @@
             - [Site Admin](#as-an-site-admin-i-can)
             - [Registered User/Nurse](#as-a-registered-user--nurse-on-the-platform-i-can)
             - [Unregistered User/Site Visitor](#as-a-site-visitor-or-unregistered-user-i-can)
-    - [Authorizaton and Authentication Testting](#authorizaton-and-authentication-testting)
+    - [Authorizaton and Authentication Testing](#authorizaton-and-authentication-testing)
     - [Automatic Testing](#automatic-testing)
 
 
@@ -59,6 +59,9 @@
     - All social links are working and open to external pages
 
     - Site checked and is working in various browsers such as Chrome and Safari
+
+    - <img width="500" alt="Screenshot 2023-04-28 at 15 06 44" src="https://user-images.githubusercontent.com/69070044/235170030-ab0776d2-c733-492d-b86d-fa7e74032f6d.png">
+
 
 - ## Manual Testing 
     Below is a summary of how I manually tested each user story. 
@@ -131,7 +134,7 @@
         | ✓ | Signup button is present below the form | 
         | ✓ | Message to await verification is seen once form is filled  and signup button is clicked|
 
-- ## Authorizaton and Authentication Testting
+- ## Authorizaton and Authentication Testing
     - If an authenticated user attempts to directly access a profile that does not belong to them by typing its address on the URL, they will be unable to delete or edit it.
     - A message box appears to show this.
     - User are then redirected to nurse profile list page
@@ -140,6 +143,9 @@
 
     - Also, Non-logged in users cannot delete or edit profiles on the site via URLs. They are will be redirected to signup page.
         - <img width="500" alt="signup page" src="https://user-images.githubusercontent.com/69070044/235146462-a9465d49-bf03-4cf9-8b32-d1e5b556542b.png">
+
+    - Passed ✓: The JavaScript code used to prompt users to confirm if they want to delete their profile passed the testing. When the delete button is clicked, an alert box pops up at the top of the screen for user to confirm account deletion.
+        - <img width="933" alt="javascript test" src="https://user-images.githubusercontent.com/69070044/235171292-0af97a17-eff6-4034-bcc0-e236841d95ff.png">
 
     - Take note: Authenticated users who are registered nurses but do not have a profile can join the platform. The "Join the platform" button will only be visible to authenticated users who have not yet joined the platform or set up their profile. Unauthenticated users and authenticated users who already have a profile or have joined the platform will not see this button as it is hidden.
         - <img width="1000" alt="Join our platform button" src="https://user-images.githubusercontent.com/69070044/235149178-d9212b4a-ab7a-4986-ba90-5e10eeaa43a3.png">
